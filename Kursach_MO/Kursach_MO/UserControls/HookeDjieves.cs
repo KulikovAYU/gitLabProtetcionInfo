@@ -24,7 +24,7 @@ namespace Kursach_MO.UserControls
             if (radioButton1.Checked)
             {
                 //f = x * x + y * y;
-                f = (x + y) * (x + y) + (y - 1) * (y - 1);
+                f = 10*(x*x)  +10*x*y+3*y*y;
             }
             if (radioButton2.Checked)
             {

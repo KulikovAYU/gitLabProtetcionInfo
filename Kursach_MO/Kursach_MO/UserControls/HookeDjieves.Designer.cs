@@ -67,7 +67,7 @@
             this.E_TB.Name = "E_TB";
             this.E_TB.Size = new System.Drawing.Size(100, 20);
             this.E_TB.TabIndex = 70;
-            this.E_TB.Text = "0,2";
+            this.E_TB.Text = "0,1";
             // 
             // dx_TB
             // 
@@ -75,7 +75,7 @@
             this.dx_TB.Name = "dx_TB";
             this.dx_TB.Size = new System.Drawing.Size(100, 20);
             this.dx_TB.TabIndex = 69;
-            this.dx_TB.Text = "2";
+            this.dx_TB.Text = "0.5";
             // 
             // x0_TB
             // 
@@ -83,7 +83,7 @@
             this.x0_TB.Name = "x0_TB";
             this.x0_TB.Size = new System.Drawing.Size(100, 20);
             this.x0_TB.TabIndex = 68;
-            this.x0_TB.Text = "5";
+            this.x0_TB.Text = "-2";
             // 
             // label3
             // 
@@ -238,7 +238,7 @@
             this.y0_TB.Name = "y0_TB";
             this.y0_TB.Size = new System.Drawing.Size(100, 20);
             this.y0_TB.TabIndex = 82;
-            this.y0_TB.Text = "6";
+            this.y0_TB.Text = "-1";
             // 
             // label7
             // 
