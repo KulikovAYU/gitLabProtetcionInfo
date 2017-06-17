@@ -67,7 +67,7 @@
             this.E_TB.Name = "E_TB";
             this.E_TB.Size = new System.Drawing.Size(100, 20);
             this.E_TB.TabIndex = 70;
-            this.E_TB.Text = "0,003";
+            this.E_TB.Text = "0,2";
             // 
             // dx_TB
             // 
@@ -75,7 +75,7 @@
             this.dx_TB.Name = "dx_TB";
             this.dx_TB.Size = new System.Drawing.Size(100, 20);
             this.dx_TB.TabIndex = 69;
-            this.dx_TB.Text = "1";
+            this.dx_TB.Text = "2";
             // 
             // x0_TB
             // 
@@ -83,7 +83,7 @@
             this.x0_TB.Name = "x0_TB";
             this.x0_TB.Size = new System.Drawing.Size(100, 20);
             this.x0_TB.TabIndex = 68;
-            this.x0_TB.Text = "1";
+            this.x0_TB.Text = "5";
             // 
             // label3
             // 
@@ -210,7 +210,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.Location = new System.Drawing.Point(27, 461);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 20);
+            this.label5.Size = new System.Drawing.Size(98, 20);
             this.label5.TabIndex = 74;
             this.label5.Text = "Func(Xopt)=";
             // 
@@ -238,7 +238,7 @@
             this.y0_TB.Name = "y0_TB";
             this.y0_TB.Size = new System.Drawing.Size(100, 20);
             this.y0_TB.TabIndex = 82;
-            this.y0_TB.Text = "1";
+            this.y0_TB.Text = "6";
             // 
             // label7
             // 

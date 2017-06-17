@@ -16,7 +16,7 @@ namespace Kursach_MO
         private DelenyeIntervalaPopolam p1;
         private GoldDivision p2;
         private SquareInterpolation p3;
-        //private HookeDjieves p4;
+        private HookeDjieves p4;
         private Simplex p5;
 
 
@@ -26,7 +26,7 @@ namespace Kursach_MO
             p1 = new DelenyeIntervalaPopolam();
             p2=new GoldDivision();
             p3=new SquareInterpolation();
-           // p4=new HookeDjieves();
+            p4=new HookeDjieves();
             p5=new Simplex();
          }
 
@@ -51,7 +51,7 @@ namespace Kursach_MO
         private void button4_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            //panel1.Controls.Add(p4);
+            panel1.Controls.Add(p4);
         }
 
         private void button5_Click(object sender, EventArgs e)
