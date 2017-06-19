@@ -20,67 +20,83 @@ namespace Kursach_MO.UserControls
             double x = p.x;
             double y = p.y;
             double f=0;
-
             if (radioButton1.Checked)
             {
-                //f = x * x + y * y;
-                f = 10*(x*x)  +10*x*y+3*y*y;
+                f = x * x + y * y;
             }
             if (radioButton2.Checked)
             {
                 f = 100*Math.Pow((y - x * x),2) +Math.Pow((1-x),2);
             }
-
             if (radioButton3.Checked)
             {
                f = Math.Pow(x, 4)+ Math.Pow(y, 4) + 2* Math.Pow(x, 2) * Math.Pow(y, 2)-4*x+3;
             }
-
             return f;
-            
         }
 
-        Point ResearchInKoord(Point point, string nameCord, double step)
+        private bool flag;
+        Point ResearchInKoord(Point point, double step) //исследующий поиск
         {
-            Point nextPoint = new Point(); //точка для xk+1
+         Point nextPoint=new Point();
 
-            if (String.Equals(nameCord, "X")) //если идем по координате Х
-            {
-                nextPoint.x = point.x + step; // пытаемся сделать шаг в направлении h[i] по оси Х
-                nextPoint.y = point.y; // координата y не меняется
-                
-            }
+        //ШАГАЕМ ПО ОСИ Х
 
-            else // иначе идем по координате Y
-            {
-                nextPoint.y = point.y + step; // пытаемся сделать шаг в направлении h[i] по оси Х
-                nextPoint.x = point.x; // координата х не меняется
-             
-            }
+            nextPoint.x = point.x -step;
 
-            if (Func(nextPoint) > Func(point)) // если шаг в выбранном направлении был неудачным
+            if (Func(nextPoint)>=Func(point))
             {
-                
-                if (String.Equals(nameCord, "X")) //если идем по координате Х
+                nextPoint.x = point.x + step;
+                if ((Func(nextPoint) >= Func(point)))
                 {
-                    nextPoint.x = point.x - step; //снова пытаемся сделать шаг в направлении -h[i] по оси Х
-                    nextPoint.y = point.y; // координата y не меняется
+                    //пробуем поменять по у
+
+                    nextPoint.y = point.y - step;
+
+                    if (Func(nextPoint)>=Func(point))
+                    {
+                        nextPoint.y = point.y + step;
+
+                        if (Func(nextPoint) < Func(point))
+                        {
+                            point = nextPoint;
+
+                        }
+                        
+                    }
+                    else
+                    {
+                        point = nextPoint;
+                    }
+
+
+                }
+                else
+                {
+                    point = nextPoint;
+                }
+            }
+            else
+            {
+                point = nextPoint;
                
-                }
-                else // иначе идем по координате Y
-                {
-                    nextPoint.y = point.y - step; // снова пытаемся сделать шаг в направлении -h[i] по оси Х
-                    nextPoint.x = point.x; // координата х не меняется
-                }
+                nextPoint.y = point.y - step;
 
-              
-                //if (Func(nextPoint) < Func(point)) // 
-                //{
-                //    point = nextPoint;
-                //}
+                if (Func(nextPoint)>=Func(point ))
+                {
+                    nextPoint.y = point.y + step;
+
+                    if (Func(nextPoint) < Func(point))
+                    {
+                        point = nextPoint;
+                    }
+
+                }
+                else
+                {
+                    point = nextPoint;
+                }
             }
-            point = nextPoint;
-            WriteLine($"Получили точку ({point.x};{point.y})");
             return point;
         }
 
@@ -90,139 +106,49 @@ namespace Kursach_MO.UserControls
             Point Xp=new Point();
             int lambda = 2; //ускоряющий коэффициент поиска по образцу
 
-            Xp.x = currentPoint.x + lambda * (currentPoint.x - prevPoint.x);
-            Xp.y= currentPoint.y + lambda * (currentPoint.y - prevPoint.y);
 
+            Xp.x = currentPoint.x + lambda * (currentPoint.x - prevPoint.x);
+            Xp.y = currentPoint.y + lambda * (currentPoint.y - prevPoint.y);
+            
             return Xp;
         }
 
        
         private void Work()
         {
-           int alpha = 2; //коэффициент уменьшения шага
-          
-
-            double Step = Convert.ToDouble(dx_TB.Text.Replace(".",","));  //начальный шаг
-            double eps = Convert.ToDouble(E_TB.Text.Replace(".", ",")); //точность поиска
-            
-           
-            Point prevPoint = new Point();
-            Point nextPoint = new Point();
-            Point currentPoint = new Point();
+            Point prevPoint = new Point();    // =xk-1
+            Point nextPoint = new Point();   // =xk+1;
+            Point currentPoint = new Point(); // =xk;
 
 
             currentPoint.x= Double.Parse(x0_TB.Text.Replace(".", ","));// задали начальеую точку xk=x0 по координате х
             currentPoint.y= Double.Parse(y0_TB.Text.Replace(".", ","));// задали начальную точку xk=x0 по координате y
+            double Step = Convert.ToDouble(dx_TB.Text.Replace(".", ","));  //начальный шаг
+            double eps = Convert.ToDouble(E_TB.Text.Replace(".", ",")); //точность поиска
+            int alpha = 2; //коэффициент уменьшения шага
 
-            //Отладка
-            WriteLine($"Определяем значение функции в начальной точке ({currentPoint.x};{currentPoint.y}) ={Func(currentPoint)}");
-            //
-            nextPoint = currentPoint;
-
-           do
+         
+            
+          
+            do
             {
-                //Исследующий поиск
-                nextPoint = ResearchInKoord(nextPoint, "X", Step);
-                nextPoint = ResearchInKoord(nextPoint, "Y", Step);
-
-                //Отладка
-                WriteLine($"Точка полученная в результате исслед. поиска= ({nextPoint.x};{nextPoint.y})");
-                //
+               nextPoint = ResearchInKoord(currentPoint,Step);//Исследующий поиск
 
                 while (Func(currentPoint) > Func(nextPoint))
                 {
-                    prevPoint = currentPoint;
-                    currentPoint = nextPoint;
-
-                    //ШАГ ПО ОБРАЗЦУ (написать функцию)
-                    nextPoint=Sample(prevPoint,currentPoint);
-                    WriteLine($"Точка полученная в результате шага по образцу= ({nextPoint.x};{nextPoint.y})");
-                    //Исследующий поиск
-                    nextPoint = ResearchInKoord(nextPoint, "X", Step);
-                    nextPoint = ResearchInKoord(nextPoint, "Y", Step);
+                   prevPoint = currentPoint;
+                   currentPoint = nextPoint;
+                    
+                   nextPoint = Sample(prevPoint, currentPoint);//ШАГ ПО ОБРАЗЦУ 
+                   nextPoint = ResearchInKoord(nextPoint,Step);//Исследующий поиск
+                   
                 }
-                
-                Step = Step / alpha;
-            
+
+            Step = Step / alpha;
             } while (Math.Abs(Step) > eps);
 
              Xopt_TB.Text = $"({Math.Round(currentPoint.x, 6)}; {Math.Round(currentPoint.y, 6)})"; 
-         //   Yopt_TB.Text = $"{Math.Round(Func(x[0], x[1]),6)}";   
-
-
-            //   do
-            //  {
-            #region Коммент исследующий поиск
-            //do
-            //{
-            //    Success = false;
-
-            //    for (int i = 0; i < 2; i++)
-            //    {
-            //        x_prev[i] = x[i];
-            //        x_new[i] = x[i];
-            //    }
-
-            //    for (int i = 0; i < 2; i++)  // по каждой компоненте координатного вектора
-            //    {
-            //        x_new[i] = x[i] + h[i];    // пытаемся сделать шаг в направлении h[i]
-
-            //        if (Func(x_new[0], x_new[1]) >= Func(x[0], x[1]))  // если шаг в выбранном направлении был неудачным
-            //        {
-            //            h[i] = -h[i];          // изменяем направление шага на противоположное
-            //            x_new[i] = x[i] + h[i];  // снова пытаемся сделать шаг
-
-            //            if (Func(x_new[0], x_new[1]) < Func(x[0], x[1]))
-            //            {
-            //                x[i] = x_new[i];
-            //                Success = true;      //шаг был удачен
-            //            }
-            //        }
-            //        else
-            //        {
-            //            x[i] = x_new[i];
-            //            Success = true;        //шаг был удачен
-            //        }
-
-            //        x_new[i] = x[i];
-            //    }
-
-            //    if (Success == false) //производим дробление шага, т.к. поиск был неудачным
-            //    {
-            //        for (int i = 0; i < 2; i++)
-            //        {
-            //            h[i] = h[i] / alpha;
-            //        }
-            //    }
-            //}
-            //while (Success || (Math.Abs(h[1]) > eps)); //пока не переместимся в новую точку или шаг поиска станет малым
-            #endregion
-
-
-
-            #region Поиск по образцу
-            //for (int i = 0; i < 2; i++)
-            //{
-            //    x_new[i] = x[i] + lambda * (x[i] - x_prev[i]);
-            //}
-
-            //if (Func(x_new[0], x_new[1]) < Func(x[0], x[1])) // переходим на новую точку
-            //{
-            //    for (int j = 0; j < 2; j++)
-            //    {
-            //        x_prev[j] = x[j];
-            //        x[j] = x_new[j];
-            //    }
-            //}
-            #endregion
-
-            // }
-            // while (Math.Abs(h[1]) > eps);
-
-
-            // Xopt_TB.Text = $"({Math.Round(x[0], 6)}; {Math.Round(x[1], 6)})"; 
-            // Yopt_TB.Text = $"{Math.Round(Func(x[0], x[1]),6)}";                 
-            // Draw(x[0], x[1]);
+   
         }
 
         // рисуем линии уровня и показываем точку минимума
