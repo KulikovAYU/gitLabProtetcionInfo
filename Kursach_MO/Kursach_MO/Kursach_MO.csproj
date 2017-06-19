@@ -86,6 +86,12 @@
     <Compile Include="UserControls\Simplex.Designer.cs">
       <DependentUpon>Simplex.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Simplex1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Simplex1.Designer.cs">
+      <DependentUpon>Simplex1.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\SquareInterpolation.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -118,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Simplex.resx">
       <DependentUpon>Simplex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Simplex1.resx">
+      <DependentUpon>Simplex1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\SquareInterpolation.resx">
       <DependentUpon>SquareInterpolation.cs</DependentUpon>

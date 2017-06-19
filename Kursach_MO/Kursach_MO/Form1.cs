@@ -18,6 +18,7 @@ namespace Kursach_MO
         private SquareInterpolation p3;
        private HookeDjieves p4;
         private Simplex p5;
+        private Simplex1 p6;
 
 
         public Form1()
@@ -28,7 +29,8 @@ namespace Kursach_MO
             p3=new SquareInterpolation();
            p4=new HookeDjieves();
            p5=new Simplex();
-         }
+            p6 = new Simplex1();
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -58,6 +60,12 @@ namespace Kursach_MO
         {
             panel1.Controls.Clear();
             panel1.Controls.Add(p5);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            panel1.Controls.Add(p6);
         }
     }
 }
