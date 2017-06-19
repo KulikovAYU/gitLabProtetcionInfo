@@ -58,36 +58,42 @@ namespace Kursach_MO.UserControls
             }
         }
         // Метод реализует сортировку пузырьком 
-        public static void BubbleSort(ref Point[] items)
-        {
-            bool swapped;
+      //public static void BubbleSort(ref Point[] items)
+      //  {
+      //      bool swapped;
 
-            do
-            {
-                swapped = false;
+      //      do
+      //      {
+      //          swapped = false;
 
-                for (int i = 1; i < items.Length; i++)
-                {
-                    if ((items[i - 1].F).CompareTo(items[i].F) > 0)
-                    {
-                        Swap(items, i - 1, i);
+      //          for (int i = 1; i < items.Length; i++)
+      //          {
+      //              if ((items[i - 1].F).CompareTo(items[i].F) > 0)
+      //              {
+      //                  Swap(items, i - 1, i);
 
-                        swapped = true;
-                    }
+      //                  swapped = true;
+      //              }
 
 
-                }
-            }
+      //          }
+      //      }
 
-            while (swapped != false);
-        }
+      //      while (swapped != false);
+      //  }
 
         #endregion
 
-
+        struct Point
+        {
+            public double x { get; set; }
+            public double F { get; set; }
+        }
 
         void SquareInterpoletion()
         {
+        
+
             Point[] points=new Point[3];
 
             points[0].x = x1;
@@ -131,7 +137,7 @@ namespace Kursach_MO.UserControls
                 Console.WriteLine($"F(x*)={_F}");// (отладка)
                 #endregion
 
-                Array.Sort(points,(Point x,Point y)=>x.F.CompareTo(y.F));
+                Array.Sort(points,( x, y)=>x.F.CompareTo(y.F));
 
                  //BubbleSort(ref f);
 
@@ -191,6 +197,8 @@ namespace Kursach_MO.UserControls
             x0_TB.Text = Convert.ToString(Math.Round(_x, 6));
             f0_TB.Text = Convert.ToString(Math.Round(_F, 6));
             i_TB.Text= Convert.ToString(i);
+
+            
             //WriteLine($"_x={_x}"); (отладка)
             //Console.ReadKey(); (отладка)
         }

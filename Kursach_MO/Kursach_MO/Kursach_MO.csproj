@@ -80,7 +80,6 @@
     <Compile Include="UserControls\HookeDjieves.Designer.cs">
       <DependentUpon>HookeDjieves.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Point.cs" />
     <Compile Include="UserControls\Simplex.cs">
       <SubType>UserControl</SubType>
     </Compile>

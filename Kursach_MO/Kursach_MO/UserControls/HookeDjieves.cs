@@ -6,12 +6,24 @@ namespace Kursach_MO.UserControls
 {
    using static Console;
 
+   
+
+
     public partial class HookeDjieves : UserControl
     {
         public HookeDjieves()
         {
             InitializeComponent();
         }
+
+        class Point
+        {
+            public double F { get; set; }
+            public double x { get; set; }
+
+            public double y { get; set; }
+        }
+        
 
         Bitmap bmp = new Bitmap(600, 400);
 
@@ -35,7 +47,7 @@ namespace Kursach_MO.UserControls
             return f;
         }
 
-        private bool flag;
+     
         Point ResearchInKoord(Point point, double step) //исследующий поиск
         {
          Point nextPoint=new Point();
@@ -68,8 +80,6 @@ namespace Kursach_MO.UserControls
                     {
                         point = nextPoint;
                     }
-
-
                 }
                 else
                 {
