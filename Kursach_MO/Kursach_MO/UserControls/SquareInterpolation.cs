@@ -133,8 +133,8 @@ namespace Kursach_MO.UserControls
                 double a2 = 1 / (points[2].x - points[1].x) * ((points[2].F - points[0].F) / (x3 - x1) - a1);
                 _x = (x1 + x2) / 2 - a1 / (2 * a2);
                 _F = Function(_x);
-                Console.WriteLine($"x*={_x}"); //(отладка)
-                Console.WriteLine($"F(x*)={_F}");// (отладка)
+                //Console.WriteLine($"x*={_x}"); //(отладка)
+                //Console.WriteLine($"F(x*)={_F}");// (отладка)
                 #endregion
 
                 Array.Sort(points,( x, y)=>x.F.CompareTo(y.F));
@@ -142,11 +142,13 @@ namespace Kursach_MO.UserControls
                  //BubbleSort(ref f);
 
 
-                for (int i = 0; i < points.Length; i++) //(отладка)
-                {
-                    Console.WriteLine($"f[{i}].F={points[i].F}"); //(отладка)
-                   Console.WriteLine($"x[{i}].x={points[i].x}"); //(отладка)
-                }
+                //for (int i = 0; i < points.Length; i++) //(отладка)
+                //{
+
+
+                //    Console.WriteLine($"f[{i}].F={points[i].F}"); //(отладка)
+                //   Console.WriteLine($"x[{i}].x={points[i].x}"); //(отладка)
+                //}
 
                 points[2].F = _F;
                 points[2].x = _x;

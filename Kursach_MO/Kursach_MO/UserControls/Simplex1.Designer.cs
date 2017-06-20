@@ -40,6 +40,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // clc_Button
@@ -121,7 +123,7 @@
             this.y0_TB.Name = "y0_TB";
             this.y0_TB.Size = new System.Drawing.Size(100, 20);
             this.y0_TB.TabIndex = 91;
-            this.y0_TB.Text = "1";
+            this.y0_TB.Text = "-10";
             // 
             // x0_TB
             // 
@@ -129,7 +131,7 @@
             this.x0_TB.Name = "x0_TB";
             this.x0_TB.Size = new System.Drawing.Size(100, 20);
             this.x0_TB.TabIndex = 90;
-            this.x0_TB.Text = "1";
+            this.x0_TB.Text = "-9";
             // 
             // label2
             // 
@@ -161,10 +163,31 @@
             this.label10.TabIndex = 87;
             this.label10.Text = "Исходные данные";
             // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(334, 39);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox3.Size = new System.Drawing.Size(567, 496);
+            this.textBox3.TabIndex = 100;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.Location = new System.Drawing.Point(293, 8);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(215, 25);
+            this.label9.TabIndex = 101;
+            this.label9.Text = "Симплексный поиск";
+            // 
             // Simplex1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.clc_Button);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
@@ -178,7 +201,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label10);
             this.Name = "Simplex1";
-            this.Size = new System.Drawing.Size(668, 568);
+            this.Size = new System.Drawing.Size(950, 570);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,5 +221,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label9;
     }
 }

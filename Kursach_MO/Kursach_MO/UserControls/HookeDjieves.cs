@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace Kursach_MO.UserControls
 {
-   using static Console;
+   //using static Console;
 
    
 
@@ -38,7 +38,9 @@ namespace Kursach_MO.UserControls
             }
             if (radioButton2.Checked)
             {
-                f = 100*Math.Pow((y - x * x),2) +Math.Pow((1-x),2);
+               // f = 100*Math.Pow((y - x * x),2) +Math.Pow((1-x),2);
+                f =Convert.ToDouble( (100d) * (y - x * x) * (y - x * x) + (1 - x) * (1 - x));
+                
             }
             if (radioButton3.Checked)
             {
@@ -52,61 +54,41 @@ namespace Kursach_MO.UserControls
         {
          Point nextPoint=new Point();
 
-        //ШАГАЕМ ПО ОСИ Х
-
-            nextPoint.x = point.x -step;
-
+         #region ШАГАЕМ ПО ОСИ Х
+        
+         nextPoint.x = point.x -step;
             if (Func(nextPoint)>=Func(point))
             {
                 nextPoint.x = point.x + step;
                 if ((Func(nextPoint) >= Func(point)))
                 {
-                    //пробуем поменять по у
-
-                    nextPoint.y = point.y - step;
-
-                    if (Func(nextPoint)>=Func(point))
-                    {
-                        nextPoint.y = point.y + step;
-
-                        if (Func(nextPoint) < Func(point))
-                        {
-                            point = nextPoint;
-
-                        }
-                        
-                    }
-                    else
-                    {
-                        point = nextPoint;
-                    }
-                }
-                else
-                {
-                    point = nextPoint;
-                }
+                    nextPoint=point;
+                 }           
             }
-            else
-            {
-                point = nextPoint;
-               
+           point = nextPoint;
+#endregion
+
+         #region ШАГАЕМ ПО ОСИ Y
+                 
+                          
                 nextPoint.y = point.y - step;
 
-                if (Func(nextPoint)>=Func(point ))
+                if (Func(nextPoint)>=Func(point))
                 {
                     nextPoint.y = point.y + step;
 
-                    if (Func(nextPoint) < Func(point))
+                    if (Func(nextPoint) >= Func(point))
                     {
-                        point = nextPoint;
+                        //  point = nextPoint;
+                        nextPoint = point;
                     }
+               }
+                
+               point = nextPoint;
+                
+            
 
-                }
-                else
-                {
-                    point = nextPoint;
-                }
-            }
+#endregion
             return point;
         }
 
@@ -114,7 +96,7 @@ namespace Kursach_MO.UserControls
         Point Sample(Point prevPoint, Point currentPoint) //шаг по образцу
         {
             Point Xp=new Point();
-            int lambda = 2; //ускоряющий коэффициент поиска по образцу
+            double lambda = 2; //ускоряющий коэффициент поиска по образцу
 
 
             Xp.x = currentPoint.x + lambda * (currentPoint.x - prevPoint.x);
@@ -131,14 +113,16 @@ namespace Kursach_MO.UserControls
             Point currentPoint = new Point(); // =xk;
 
 
-            currentPoint.x= Double.Parse(x0_TB.Text.Replace(".", ","));// задали начальеую точку xk=x0 по координате х
-            currentPoint.y= Double.Parse(y0_TB.Text.Replace(".", ","));// задали начальную точку xk=x0 по координате y
+            //currentPoint.x= Double.Parse(x0_TB.Text.Replace(".", ","));// задали начальеую точку xk=x0 по координате х
+            //currentPoint.y= Double.Parse(y0_TB.Text.Replace(".", ","));// задали начальную точку xk=x0 по координате y
+
+            currentPoint.x = Convert.ToDouble(x0_TB.Text.Replace(".", ","));// задали начальеую точку xk=x0 по координате х
+            currentPoint.y = Convert.ToDouble(y0_TB.Text.Replace(".", ","));// задали начальную точку xk=x0 по координате y
             double Step = Convert.ToDouble(dx_TB.Text.Replace(".", ","));  //начальный шаг
             double eps = Convert.ToDouble(E_TB.Text.Replace(".", ",")); //точность поиска
             int alpha = 2; //коэффициент уменьшения шага
 
-         
-            
+                   
           
             do
             {
@@ -151,13 +135,16 @@ namespace Kursach_MO.UserControls
                     
                    nextPoint = Sample(prevPoint, currentPoint);//ШАГ ПО ОБРАЗЦУ 
                    nextPoint = ResearchInKoord(nextPoint,Step);//Исследующий поиск
-                   
+                    Console.WriteLine("w");
+                  
                 }
-
-            Step = Step / alpha;
+                Console.WriteLine("Значение функции= {0}", Func(currentPoint));
+                Step = Step *0.7;
             } while (Math.Abs(Step) > eps);
 
-             Xopt_TB.Text = $"({Math.Round(currentPoint.x, 6)}; {Math.Round(currentPoint.y, 6)})"; 
+             Xopt_TB.Text = "({Math.Round(currentPoint.x, 6)}; {Math.Round(currentPoint.y, 6)})";
+
+             Xopt_TB.Text = "(" + Math.Round(currentPoint.x, 6).ToString() + ";" + Math.Round(currentPoint.y, 6).ToString() + ")";
    
         }
 
@@ -197,7 +184,10 @@ namespace Kursach_MO.UserControls
 
         private void clc_Button_Click(object sender, EventArgs e)
         {
+            Console.Clear();
             Work();
+            
+
         }
 
         private void pnImg_Paint(object sender, PaintEventArgs e)

@@ -281,7 +281,8 @@ namespace Kursach_MO.UserControls
             // MessageBox.Show(fl.ToString());
 
 
-            MessageBox.Show($"Поиск закончен. Количество итераций {o}");
+            //MessageBox.Show("Поиск закончен. Количество итераций {0}", {o});
+            MessageBox.Show("Поиск закончен. Количество итераций "+ o);
         }
 
         public void Creation()

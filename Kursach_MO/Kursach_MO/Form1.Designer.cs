@@ -85,8 +85,8 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button5);
             this.groupBox2.Controls.Add(this.button4);
+            this.groupBox2.Controls.Add(this.button6);
             this.groupBox2.Location = new System.Drawing.Point(12, 182);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(194, 134);
@@ -96,11 +96,11 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(6, 77);
+            this.button5.Location = new System.Drawing.Point(18, 322);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(182, 39);
+            this.button5.Size = new System.Drawing.Size(182, 52);
             this.button5.TabIndex = 4;
-            this.button5.Text = "Метод Симплексного поиска";
+            this.button5.Text = "Метод Симплексного поиска\r\n(старый)";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -123,7 +123,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(12, 346);
+            this.button6.Location = new System.Drawing.Point(6, 77);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(182, 39);
             this.button6.TabIndex = 5;
@@ -136,7 +136,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1173, 598);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
