@@ -44,7 +44,6 @@ namespace Kursach_MO.UserControls
             
             do
             {
-                
                 xm = (a + b) / 2;
                 x1 = (a + xm) / 2;
                 x2 = (b + xm) / 2;
