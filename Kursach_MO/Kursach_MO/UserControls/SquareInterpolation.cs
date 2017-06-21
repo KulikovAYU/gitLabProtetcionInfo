@@ -189,8 +189,8 @@ namespace Kursach_MO.UserControls
                 Ex_TB.Focus();
             }
 
-            x1 = Convert.ToDouble(x1_TB.Text);
-            dx = Convert.ToDouble(dx_TB.Text);
+            x1 = Convert.ToDouble(x1_TB.Text.Replace(".", ","));
+            dx = Convert.ToDouble(dx_TB.Text.Replace(".", ","));
             E = Convert.ToDouble(E_TB.Text.Replace(".", ","));
             Ex = Convert.ToDouble(Ex_TB.Text.Replace(".", ","));
 

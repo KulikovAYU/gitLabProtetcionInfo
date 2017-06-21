@@ -107,11 +107,10 @@ namespace Kursach_MO.UserControls
             textBox3.Clear();
             Point[] point = new Point[3];
             double eps;//точность
-            double alpha = 1;// - рёбра симплекса имеют единичную длину
+            double alpha;// - рёбра симплекса имеют единичную длину
             int n=2;// остальные точки
             
-            int N = 2;//размерность задачи
-            double M = Math.Round((1.65 * N) + 0.05 * N * N);
+          
 
             for (int i = 0; i < point.Length; i++)
             {
@@ -121,8 +120,8 @@ namespace Kursach_MO.UserControls
 
             point[0].x1 = Convert.ToDouble(x0_TB.Text.Replace(".",","));
             point[0].x2 = Convert.ToDouble(y0_TB.Text.Replace(".", ","));
-
-            eps = Convert.ToDouble(E_TB.Text.Replace(".", ".")); 
+            alpha = Convert.ToDouble(alphaTB.Text.Replace(".", ","));
+            eps = Convert.ToDouble(E_TB.Text.Replace(".", ",")); 
 
             Point xc=new Point();// центр тяжести
             Point xk = new Point();// новая точка
@@ -175,7 +174,9 @@ namespace Kursach_MO.UserControls
 
             MessageBox.Show(
                 $"Расчет закончен. Точка оптимума ({Math.Round(point[0].x1,5)};{Math.Round(point[0].x2, 5)}). Значение функции F={Math.Round(point[0].F, 5)}");
-          //Console.WriteLine( "Точка оптимума =({0:f6};{1:f6})",point[0].x1,point[0].x2);
+            optimumTB.Text = "("+Math.Round(point[0].x1, 5).ToString().ToString()+";" + Math.Round(point[0].x2, 5).ToString()+")";
+
+            //Console.WriteLine( "Точка оптимума =({0:f6};{1:f6})",point[0].x1,point[0].x2);
         }
     }
 }

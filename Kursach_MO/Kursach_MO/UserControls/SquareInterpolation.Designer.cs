@@ -80,6 +80,7 @@
             this.i_TB.Name = "i_TB";
             this.i_TB.Size = new System.Drawing.Size(100, 20);
             this.i_TB.TabIndex = 60;
+            this.i_TB.Visible = false;
             // 
             // f0_TB
             // 
@@ -104,6 +105,7 @@
             this.label4.Size = new System.Drawing.Size(287, 20);
             this.label4.TabIndex = 57;
             this.label4.Text = "Количество обращений к функции i=";
+            this.label4.Visible = false;
             // 
             // label5
             // 

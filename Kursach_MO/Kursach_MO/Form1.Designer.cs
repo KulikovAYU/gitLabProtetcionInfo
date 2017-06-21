@@ -33,10 +33,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -94,16 +94,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Многомерные методы";
             // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(18, 322);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(182, 52);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Метод Симплексного поиска\r\n(старый)";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(6, 32);
@@ -113,13 +103,6 @@
             this.button4.Text = "Метод Хука-Дживса";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(212, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(950, 570);
-            this.panel1.TabIndex = 2;
             // 
             // button6
             // 
@@ -131,6 +114,24 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(18, 322);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(182, 52);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "Метод Симплексного поиска\r\n(старый)";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Visible = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(212, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(950, 570);
+            this.panel1.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -141,7 +142,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Методы оптимизации";
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);

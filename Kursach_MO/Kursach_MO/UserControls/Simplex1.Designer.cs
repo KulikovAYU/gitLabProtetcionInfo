@@ -42,11 +42,15 @@
             this.label10 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.alphaTB = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.optimumTB = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // clc_Button
             // 
-            this.clc_Button.Location = new System.Drawing.Point(41, 299);
+            this.clc_Button.Location = new System.Drawing.Point(32, 334);
             this.clc_Button.Name = "clc_Button";
             this.clc_Button.Size = new System.Drawing.Size(108, 49);
             this.clc_Button.TabIndex = 98;
@@ -58,7 +62,7 @@
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton3.Location = new System.Drawing.Point(41, 251);
+            this.radioButton3.Location = new System.Drawing.Point(32, 286);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(287, 24);
             this.radioButton3.TabIndex = 97;
@@ -69,7 +73,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton2.Location = new System.Drawing.Point(41, 225);
+            this.radioButton2.Location = new System.Drawing.Point(32, 260);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(223, 24);
             this.radioButton2.TabIndex = 96;
@@ -81,7 +85,7 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.Checked = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton1.Location = new System.Drawing.Point(41, 201);
+            this.radioButton1.Location = new System.Drawing.Point(32, 236);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(119, 24);
             this.radioButton1.TabIndex = 95;
@@ -93,7 +97,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(37, 178);
+            this.label4.Location = new System.Drawing.Point(28, 213);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(152, 20);
             this.label4.TabIndex = 94;
@@ -182,10 +186,50 @@
             this.label9.TabIndex = 101;
             this.label9.Text = "Симплексный поиск";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(37, 168);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(27, 20);
+            this.label5.TabIndex = 103;
+            this.label5.Text = "α=";
+            // 
+            // alphaTB
+            // 
+            this.alphaTB.Location = new System.Drawing.Point(77, 168);
+            this.alphaTB.Name = "alphaTB";
+            this.alphaTB.Size = new System.Drawing.Size(100, 20);
+            this.alphaTB.TabIndex = 102;
+            this.alphaTB.Text = "1";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(20, 422);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(131, 20);
+            this.label6.TabIndex = 104;
+            this.label6.Text = "точка оптимума";
+            // 
+            // optimumTB
+            // 
+            this.optimumTB.Location = new System.Drawing.Point(24, 445);
+            this.optimumTB.Name = "optimumTB";
+            this.optimumTB.ReadOnly = true;
+            this.optimumTB.Size = new System.Drawing.Size(223, 20);
+            this.optimumTB.TabIndex = 105;
+            // 
             // Simplex1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.optimumTB);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.alphaTB);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.clc_Button);
@@ -223,5 +267,9 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox alphaTB;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox optimumTB;
     }
 }

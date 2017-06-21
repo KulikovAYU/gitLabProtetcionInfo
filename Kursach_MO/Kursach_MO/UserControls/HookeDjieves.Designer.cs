@@ -157,7 +157,7 @@
             // 
             // Xopt_TB
             // 
-            this.Xopt_TB.Location = new System.Drawing.Point(97, 395);
+            this.Xopt_TB.Location = new System.Drawing.Point(131, 395);
             this.Xopt_TB.Name = "Xopt_TB";
             this.Xopt_TB.Size = new System.Drawing.Size(100, 20);
             this.Xopt_TB.TabIndex = 75;
@@ -166,7 +166,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(24, 395);
+            this.label6.Location = new System.Drawing.Point(27, 393);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 20);
             this.label6.TabIndex = 73;
@@ -219,7 +219,7 @@
             // 
             // Yopt_TB
             // 
-            this.Yopt_TB.Location = new System.Drawing.Point(114, 461);
+            this.Yopt_TB.Location = new System.Drawing.Point(131, 461);
             this.Yopt_TB.Name = "Yopt_TB";
             this.Yopt_TB.Size = new System.Drawing.Size(100, 20);
             this.Yopt_TB.TabIndex = 76;

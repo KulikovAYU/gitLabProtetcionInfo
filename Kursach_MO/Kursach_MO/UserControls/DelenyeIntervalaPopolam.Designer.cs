@@ -107,14 +107,14 @@
             // 
             // f0_TB
             // 
-            this.f0_TB.Location = new System.Drawing.Point(356, 415);
+            this.f0_TB.Location = new System.Drawing.Point(171, 434);
             this.f0_TB.Name = "f0_TB";
             this.f0_TB.Size = new System.Drawing.Size(100, 20);
             this.f0_TB.TabIndex = 10;
             // 
             // x0_TB
             // 
-            this.x0_TB.Location = new System.Drawing.Point(356, 370);
+            this.x0_TB.Location = new System.Drawing.Point(171, 389);
             this.x0_TB.Name = "x0_TB";
             this.x0_TB.Size = new System.Drawing.Size(100, 20);
             this.x0_TB.TabIndex = 9;
@@ -123,7 +123,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(301, 413);
+            this.label5.Location = new System.Drawing.Point(116, 432);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(49, 20);
             this.label5.TabIndex = 7;
@@ -133,7 +133,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(301, 370);
+            this.label6.Location = new System.Drawing.Point(116, 389);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(34, 20);
             this.label6.TabIndex = 6;
@@ -152,16 +152,16 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(556, 131);
+            this.listBox1.Location = new System.Drawing.Point(556, 92);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(318, 355);
+            this.listBox1.Size = new System.Drawing.Size(372, 459);
             this.listBox1.TabIndex = 13;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(538, 99);
+            this.label7.Location = new System.Drawing.Point(552, 65);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(336, 20);
             this.label7.TabIndex = 14;
@@ -209,7 +209,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(290, 333);
+            this.label8.Location = new System.Drawing.Point(105, 352);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(166, 20);
             this.label8.TabIndex = 18;

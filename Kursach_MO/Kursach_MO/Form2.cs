@@ -51,22 +51,41 @@ namespace Kursach_MO
             step = step - (step % 2);
             if (step % 2 != 0) step -= 1;
 
-
+            int i= 0;
             // наносим насечки
             for (double x = 250; x < 500; x += step)
             {
 
                 gr.DrawLine(Pens.Black, (float)x, (float)(250 - step / 10), (float)x, (float)(250 + step / 10));
-
+                gr.DrawString(i.ToString(),new Font("Arial",10),Brushes.Black,new PointF((float)x-5f, (float)(250 - step / 10)+7f) );
+                i++;
 
             }
+            i = 0;
             for (double x = 250; x > 0; x -= step)
+            {
                 gr.DrawLine(Pens.Black, (float)x, (float)(250 - step / 10), (float)x, (float)(250 + step / 10));
+                gr.DrawString(i.ToString(), new Font("Arial", 10), Brushes.Black, new PointF((float)x - 5f, (float)(250 - step / 10) + 7f));
+                i--;
+            }
 
+            i = 0;
             for (double y = 250; y < 500; y += step)
+            {
                 gr.DrawLine(Pens.Black, (float)(250 - step / 10), (float)y, (float)(250 + step / 10), (float)y);
+                gr.DrawString(i.ToString(), new Font("Arial", 10), Brushes.Black, new PointF((float)(250 - step / 10) + 7f, (float)y - 5f));
+                i--;
+            }
+
+            i = 0;
             for (double y = 250; y > 0; y -= step)
+
+            {
                 gr.DrawLine(Pens.Black, (float)(250 - step / 10), (float)y, (float)(250 + step / 10), (float)y);
+                gr.DrawString(i.ToString(), new Font("Arial", 10), Brushes.Black, new PointF((float)(250 - step / 10) + 7f , (float)y - 5f));
+                i++;
+            }
+            
             nkoordx = 250;
             nkoordy = 250;
             //Random r1 = new Random();
