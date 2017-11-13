@@ -9,3 +9,15 @@ C:\Users\User\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Labs_Zach
 C:\Users\User\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\User\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\User\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Lab2.resources
+Z:\MyProjects\Labs\WindowsFormsApp1\obj\Debug\Labs_Zach_info.csprojResolveAssemblyReference.cache
+Z:\MyProjects\Labs\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Lab1.resources
+Z:\MyProjects\Labs\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Lab2.resources
+Z:\MyProjects\Labs\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Labs.resources
+Z:\MyProjects\Labs\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+Z:\MyProjects\Labs\WindowsFormsApp1\obj\Debug\Labs_Zach_info.csproj.GenerateResource.Cache
+Z:\MyProjects\Labs\WindowsFormsApp1\obj\Debug\Labs_Zach_info.csproj.CoreCompileInputs.cache
+Z:\MyProjects\Labs\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+Z:\MyProjects\Labs\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+Z:\MyProjects\Labs\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+Z:\MyProjects\Labs\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+Z:\MyProjects\Labs\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb

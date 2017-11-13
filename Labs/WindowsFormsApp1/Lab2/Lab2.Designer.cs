@@ -26,16 +26,18 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
+      
+
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,6 +49,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Файл исходного сообщения";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -80,21 +83,15 @@
             this.panel1.Size = new System.Drawing.Size(1016, 229);
             this.panel1.TabIndex = 3;
             // 
-            // textBox1
+            // button4
             // 
-            this.textBox1.Location = new System.Drawing.Point(290, 38);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(724, 22);
-            this.textBox1.TabIndex = 4;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(290, 90);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(724, 22);
-            this.textBox2.TabIndex = 5;
+            this.button4.Location = new System.Drawing.Point(3, 184);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(262, 31);
+            this.button4.TabIndex = 7;
+            this.button4.Text = "Открыть папку в проводнике";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // textBox3
             // 
@@ -104,14 +101,21 @@
             this.textBox3.Size = new System.Drawing.Size(724, 22);
             this.textBox3.TabIndex = 6;
             // 
-            // button4
+            // textBox2
             // 
-            this.button4.Location = new System.Drawing.Point(3, 184);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(262, 31);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "Открыть папку в проводнике";
-            this.button4.UseVisualStyleBackColor = true;
+            this.textBox2.Location = new System.Drawing.Point(290, 90);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(724, 22);
+            this.textBox2.TabIndex = 5;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(290, 38);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(724, 22);
+            this.textBox1.TabIndex = 4;
             // 
             // Lab2
             // 
@@ -127,6 +131,8 @@
 
         }
 
+        
+
         #endregion
 
         private System.Windows.Forms.Button button1;
@@ -134,8 +140,8 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox textBox3;
+        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox textBox1;
     }
 }
