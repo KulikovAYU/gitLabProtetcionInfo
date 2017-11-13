@@ -61,6 +61,7 @@
     <Compile Include="Lab2\Lab2.Designer.cs">
       <DependentUpon>Lab2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lab2\Tyrma.cs" />
     <Compile Include="Labs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +100,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Lab2\Files\input.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

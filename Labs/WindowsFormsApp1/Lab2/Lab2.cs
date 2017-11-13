@@ -1,20 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
     public partial class Lab2 : Form
     {
+
         public Lab2()
         {
             InitializeComponent();
+            tyrma = new Tyrma(this);
+        }
+
+        private Tyrma tyrma;
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tyrma.CreateCodeFile();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Process.Start(tyrma.GetPathName());
         }
     }
 }
