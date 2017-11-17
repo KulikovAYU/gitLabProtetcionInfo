@@ -34,11 +34,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.LabBTN3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.LabBTN3);
             this.panel1.Controls.Add(this.LabBTN2);
             this.panel1.Controls.Add(this.LabBTN1);
             this.panel1.Location = new System.Drawing.Point(37, 87);
@@ -98,6 +100,16 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "TODO: Внимание, запускаемая форма -\r\n текущая форма проекта";
             // 
+            // LabBTN3
+            // 
+            this.LabBTN3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabBTN3.Location = new System.Drawing.Point(0, 97);
+            this.LabBTN3.Name = "LabBTN3";
+            this.LabBTN3.Size = new System.Drawing.Size(349, 41);
+            this.LabBTN3.TabIndex = 3;
+            this.LabBTN3.Text = "Лаб N3";
+            this.LabBTN3.UseVisualStyleBackColor = true;
+            // 
             // Labs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -123,5 +135,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button LabBTN3;
     }
 }

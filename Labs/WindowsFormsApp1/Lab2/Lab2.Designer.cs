@@ -32,7 +32,6 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -43,31 +42,24 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(3, 34);
+            this.button1.Location = new System.Drawing.Point(3, 15);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(235, 31);
+            this.button1.Size = new System.Drawing.Size(229, 31);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Файл исходного сообщения";
+            this.button1.Text = "Зашифровать";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(3, 87);
+            this.button2.Enabled = false;
+            this.button2.Location = new System.Drawing.Point(3, 68);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(278, 29);
+            this.button2.Size = new System.Drawing.Size(229, 29);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Файл зашифрованного сообщения";
+            this.button2.Text = "Расшифровать";
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(3, 138);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(262, 31);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Файл расшифрованного сообщения";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel1
             // 
@@ -76,18 +68,17 @@
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1016, 229);
+            this.panel1.Size = new System.Drawing.Size(934, 203);
             this.panel1.TabIndex = 3;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(3, 184);
+            this.button4.Location = new System.Drawing.Point(3, 165);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(262, 31);
+            this.button4.Size = new System.Drawing.Size(229, 31);
             this.button4.TabIndex = 7;
             this.button4.Text = "Открыть папку в проводнике";
             this.button4.UseVisualStyleBackColor = true;
@@ -95,36 +86,39 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(290, 142);
+            this.textBox3.Location = new System.Drawing.Point(248, 123);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(724, 22);
+            this.textBox3.Size = new System.Drawing.Size(669, 22);
             this.textBox3.TabIndex = 6;
+            this.textBox3.Text = "Файл раскодированного сообщения";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(290, 90);
+            this.textBox2.Location = new System.Drawing.Point(248, 71);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(724, 22);
+            this.textBox2.Size = new System.Drawing.Size(669, 22);
             this.textBox2.TabIndex = 5;
+            this.textBox2.Text = "Выберите файл закодированного сообщения для расшифрования";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(290, 38);
+            this.textBox1.Location = new System.Drawing.Point(248, 19);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(724, 22);
+            this.textBox1.Size = new System.Drawing.Size(669, 22);
             this.textBox1.TabIndex = 4;
+            this.textBox1.Text = "Выберите файл сообщения для шифрования";
             // 
             // Lab2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1034, 253);
+            this.ClientSize = new System.Drawing.Size(952, 221);
             this.Controls.Add(this.panel1);
             this.Name = "Lab2";
-            this.Text = "Lab2";
+            this.Text = "Лабораторная работа N2";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -136,12 +130,11 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button4;
         public System.Windows.Forms.TextBox textBox3;
         public System.Windows.Forms.TextBox textBox2;
         public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.Button button2;
     }
 }

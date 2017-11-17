@@ -62,6 +62,12 @@
       <DependentUpon>Lab2.cs</DependentUpon>
     </Compile>
     <Compile Include="Lab2\Tyrma.cs" />
+    <Compile Include="Lab3\Lab3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab3\Lab3.Designer.cs">
+      <DependentUpon>Lab3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Labs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Lab2\TyrmaEncoding.cs" />
     <EmbeddedResource Include="Lab1\Lab1.resx">
       <DependentUpon>Lab1.cs</DependentUpon>
     </EmbeddedResource>
