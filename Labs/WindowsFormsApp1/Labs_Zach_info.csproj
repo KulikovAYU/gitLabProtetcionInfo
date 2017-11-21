@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lab3\CreateFiles.cs" />
     <Compile Include="Lab1\Lab1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +84,9 @@
     <EmbeddedResource Include="Lab2\Lab2.resx">
       <DependentUpon>Lab2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Lab3\Lab3.resx">
+      <DependentUpon>Lab3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Labs.resx">
       <DependentUpon>Labs.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +115,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Lab2\Files\input.txt" />
+    <Content Include="Lab3\Files\input.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
