@@ -48,7 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Lab3\CreateFiles.cs" />
+    <Compile Include="Lab3\GammaRevert.cs" />
     <Compile Include="Lab1\Lab1.cs">
       <SubType>Form</SubType>
     </Compile>
