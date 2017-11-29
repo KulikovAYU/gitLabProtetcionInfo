@@ -48,7 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Lab3\GammaRevert.cs" />
+    <Compile Include="Lab3\Gost28147.cs" />
     <Compile Include="Lab1\Lab1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,7 +115,6 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Lab2\Files\input.txt" />
-    <Content Include="Lab3\Files\input.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
