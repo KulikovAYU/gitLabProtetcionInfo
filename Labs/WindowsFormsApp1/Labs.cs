@@ -28,5 +28,11 @@ namespace WindowsFormsApp1
             Lab2 lab = new Lab2();
             lab.ShowDialog();
         }
+
+        private void LabBTN3_Click(object sender, EventArgs e)
+        {
+            Lab3 lab = new Lab3();
+            lab.ShowDialog();
+        }
     }
 }
