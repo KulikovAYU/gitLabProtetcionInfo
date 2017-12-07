@@ -200,7 +200,8 @@
             this.ClientSize = new System.Drawing.Size(743, 593);
             this.Controls.Add(this.panel1);
             this.Name = "Lab3";
-            this.Text = "Lab3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Лабораторная работа N3";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);

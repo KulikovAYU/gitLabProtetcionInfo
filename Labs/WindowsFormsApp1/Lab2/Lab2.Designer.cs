@@ -118,6 +118,7 @@
             this.ClientSize = new System.Drawing.Size(952, 221);
             this.Controls.Add(this.panel1);
             this.Name = "Lab2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Лабораторная работа N2";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

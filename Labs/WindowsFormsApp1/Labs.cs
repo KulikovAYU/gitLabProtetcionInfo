@@ -19,20 +19,22 @@ namespace WindowsFormsApp1
 
         private void LabBTN1_Click(object sender, EventArgs e)
         {
-            Lab1 lab = new Lab1();
-            lab.ShowDialog();
+            new Lab1().ShowDialog();
         }
 
         private void LabBTN2_Click(object sender, EventArgs e)
         {
-            Lab2 lab = new Lab2();
-            lab.ShowDialog();
+            new Lab2().ShowDialog();
         }
 
         private void LabBTN3_Click(object sender, EventArgs e)
         {
-            Lab3 lab = new Lab3();
-            lab.ShowDialog();
+            new Lab3().ShowDialog();
+        }
+
+        private void LabBTN4_Click(object sender, EventArgs e)
+        {
+            new Lab4().ShowDialog();
         }
     }
 }

@@ -49,7 +49,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(121, 43);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(541, 22);
             this.textBox1.TabIndex = 0;
@@ -58,7 +58,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(121, 103);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(541, 22);
             this.textBox2.TabIndex = 1;
@@ -90,7 +90,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBoxResult.Location = new System.Drawing.Point(121, 182);
-            this.richTextBoxResult.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBoxResult.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxResult.Name = "richTextBoxResult";
             this.richTextBoxResult.Size = new System.Drawing.Size(541, 60);
             this.richTextBoxResult.TabIndex = 4;
@@ -110,7 +110,7 @@
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.Location = new System.Drawing.Point(542, 250);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 28);
             this.button1.TabIndex = 6;
@@ -118,7 +118,7 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // Lab1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -130,8 +130,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "Lab1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Лабораторная работа N1";
             this.ResumeLayout(false);
             this.PerformLayout();

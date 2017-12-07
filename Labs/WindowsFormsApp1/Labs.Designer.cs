@@ -29,26 +29,40 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.LabBTN4 = new System.Windows.Forms.Button();
             this.LabBTN3 = new System.Windows.Forms.Button();
             this.LabBTN2 = new System.Windows.Forms.Button();
             this.LabBTN1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.LabBTN4 = new System.Windows.Forms.Button();
+            this.LabBTN5 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.LabBTN5);
             this.panel1.Controls.Add(this.LabBTN4);
             this.panel1.Controls.Add(this.LabBTN3);
             this.panel1.Controls.Add(this.LabBTN2);
             this.panel1.Controls.Add(this.LabBTN1);
             this.panel1.Location = new System.Drawing.Point(37, 87);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(352, 357);
+            this.panel1.Size = new System.Drawing.Size(352, 249);
             this.panel1.TabIndex = 0;
+            // 
+            // LabBTN4
+            // 
+            this.LabBTN4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabBTN4.Location = new System.Drawing.Point(0, 144);
+            this.LabBTN4.Name = "LabBTN4";
+            this.LabBTN4.Size = new System.Drawing.Size(349, 41);
+            this.LabBTN4.TabIndex = 4;
+            this.LabBTN4.Text = "Лаб N4";
+            this.LabBTN4.UseVisualStyleBackColor = true;
+            this.LabBTN4.Click += new System.EventHandler(this.LabBTN4_Click);
             // 
             // LabBTN3
             // 
@@ -107,33 +121,46 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(33, 581);
+            this.label3.Location = new System.Drawing.Point(39, 415);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(342, 40);
             this.label3.TabIndex = 4;
             this.label3.Text = "TODO: Внимание, запускаемая форма -\r\n текущая форма проекта";
             // 
-            // LabBTN4
+            // LabBTN5
             // 
-            this.LabBTN4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabBTN4.Location = new System.Drawing.Point(0, 144);
-            this.LabBTN4.Name = "LabBTN4";
-            this.LabBTN4.Size = new System.Drawing.Size(349, 41);
-            this.LabBTN4.TabIndex = 4;
-            this.LabBTN4.Text = "Лаб N4";
-            this.LabBTN4.UseVisualStyleBackColor = true;
+            this.LabBTN5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabBTN5.Location = new System.Drawing.Point(0, 191);
+            this.LabBTN5.Name = "LabBTN5";
+            this.LabBTN5.Size = new System.Drawing.Size(349, 41);
+            this.LabBTN5.TabIndex = 5;
+            this.LabBTN5.Text = "Лаб N5";
+            this.LabBTN5.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(39, 350);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(273, 40);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Выполнил: студент гр.4-80 к\r\nКуликов А.Ю.";
             // 
             // Labs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(437, 643);
+            this.ClientSize = new System.Drawing.Size(437, 477);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Labs";
-            this.Text = "Labs";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Лабораторные работы \"Защита информации\"";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -150,5 +177,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button LabBTN3;
         private System.Windows.Forms.Button LabBTN4;
+        private System.Windows.Forms.Button LabBTN5;
+        private System.Windows.Forms.Label label4;
     }
 }
