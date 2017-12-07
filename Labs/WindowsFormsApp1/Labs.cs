@@ -36,5 +36,6 @@ namespace WindowsFormsApp1
         {
             new Lab4().ShowDialog();
         }
+
     }
 }
