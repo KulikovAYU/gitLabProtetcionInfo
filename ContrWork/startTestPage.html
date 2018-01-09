@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Контрольная работа(Вар3)</title>
+	<script src="Program.js" defer></script>
+	<link href="PageStyle.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<div id="Registration">
+
+		<div id="Navigation">
+			<div class="Labels">
+				<div class="oms_definition">Темы для изучения:</div>
+				<li><a href=firstPage.html>Определение матрицы и её элемента. Обозначения</a></li>
+				<li><a href=secondPage.html>Виды матриц в зависимости от их размера. Главная и побочная диагонали. След матрицы.</a></li>
+				<li><a href=thirdPage.html>Виды матриц в зависимости от значений их элементов.</a></li>
+				<li><a href=startTestPage.html>Пройти тестирование</a></li>
+
+			</div>
+		</div>
+
+		<h1 class="header">Введите данные для тестирования</h1>
+
+
+		<div class="container">
+			<img src="Images/men.png">
+			<form id="idForm">
+
+				<div class="dws-input">
+					<input id="IDFirstName" type="text" name="FirstName" placeholder="Имя">
+				</div>
+				<div class="dws-input">
+					<input id="Family" type="text" name="Family" placeholder="Фамилия">
+				</div>
+				<div class="dws-input">
+					<input id="LastName" type="text" name="LastName" placeholder="Отчество">
+				</div>
+				<br />
+				<input id="BeginTest" class="dws-sumbit" type="button" value="Начать тестирование">
+
+			</form>
+
+		</div>
+		<h3 id="ErrRegistrationMessage" style="color: crimson; text-align: center;"></h3>
+		
+	</div>
+
+
+
+<div id="FirstQuestion">
+
+	<div id="main" style="left: 50%; margin-top: 15%; ">
+		<!--<p class="block1">«Режим тестирования»</p>-->
+		<form>
+			<div id="Navigation">
+				<div class="Labels">
+					<div class="opredelenye">Вопрос №1.</div>
+					<p id="newParagraph"> Матрица размера mxn это:</p>
+					<input type="radio" name="firstQestRadio" value="true"> Прямоугольная таблица специального вида, состоящая из <em>n</em> строк и <em>m</em> столбцов, заполненная числами.
+					<p id="newParagraph"></p>
+					<input type="radio" name="firstQestRadio" value="false"> Прямоугольная таблица специального вида, состоящая из <em>n</em> столбцов и <em>m</em> строк, заполненная числами.
+					<p id="newParagraph"></p>
+					<input type="radio" name="firstQestRadio" value="false"> Совокупность <em>m</em> и <em>n</em> чисел, расположенных в одной стрке
+					<p id="newParagraph"></p>
+					<input type="radio" name="firstQestRadio" value="false"> Нет правильного ответа
+					<p id="newParagraph"></p>
+					<input id= "firstQestRadio" type="radio" name="firstQestRadio" value="false"> Все ответы верны
+				</div>
+			</div>
+			<p id="newParagraph"></p>
+
+		</form>
+
+	</div>
+</div>
+
+<div id="SecondQuestion">
+
+	<div id="main" style="left: 50%; margin-top: 15%; ">
+		<!--<p class="block1">«Режим тестирования»</p>-->
+		<form>
+
+			<div id="Navigation">
+				<div class="Labels">
+					<div class="opredelenye">Вопрос №2.</div>
+					<p id="newParagraph"> Порядок может быть только у матрицы следующего вида:</p>
+					<input type="radio" name="secQestRadio" value="false"> Прямоугольной.
+					<p id="newParagraph"></p>
+					<input type="radio" name="secQestRadio" value="true"> Квадратной.+
+					<p id="newParagraph"></p>
+					<input type="radio" name="secQestRadio" value="false"> Любой.
+					<p id="newParagraph"></p>
+					<input type="radio" name="secQestRadio" value="false"> Матрицы-строки.
+					<p id="newParagraph"></p>
+					<input type="radio" name="secQestRadio" value="false"> Нет правильного ответа.
+				</div>
+			</div>
+			<p id="newParagraph"></p>
+
+		</form>
+
+	</div>
+
+</div>
+
+<div id="ThirdQuestion">
+
+	<div id="main" style="left: 50%; margin-top: 15%; ">
+		<!--<p class="block1">«Режим тестирования»</p>-->
+		<form>
+
+			<div id="Navigation">
+				<div class="Labels">
+					<div class="opredelenye">Вопрос №3.</div>
+					<p id="newParagraph"> Диагональной называется матрица, у которой:</p>
+					<input type="radio" name="answers" value="true"> Все элементы вне главной диагонали равны нулю.+
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false"> Все элементы главной диагонали равны нулю.
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false"> Все элементы на главной и побочной диагоналях равны нулю.
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false"> Все элементы первой строки равны нулю.
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false"> Нет правильного ответа.
+				</div>
+			</div>
+			<p id="newParagraph"></p>
+
+		</form>
+
+	</div>
+
+</div>
+
+<div id="FourQuestion">
+
+	<div id="main" style="left: 50%; margin-top: 15%; ">
+		<!--<p class="block1">«Режим тестирования»</p>-->
+		<form>
+
+			<div id="Navigation">
+				<div class="Labels">
+					<div class="opredelenye">Вопрос №4.</div>
+					<p id="newParagraph"> Линейными операциями называют:</p>
+					<input type="checkbox" name="answers" value="true"> Умножение матрицы на число.+
+					<p id="newParagraph"></p>
+					<input type="checkbox" name="answers" value="false"> Транспонирование.
+					<p id="newParagraph"></p>
+					<input type="checkbox" name="answers" value="false"> Сложение матриц.+
+					<p id="newParagraph"></p>
+					<input type="checkbox" name="answers" value="false"> Умножение матриц.
+					<p id="newParagraph"></p>
+					<input type="checkbox" name="answers" value="false"> Поиск определителя <em>det</em>
+				</div>
+			</div>
+			<p id="newParagraph"></p>
+
+		</form>
+
+	</div>
+
+</div>
+
+<div id="FiveQuestion">
+
+	<div id="main" style="left: 50%; margin-top: 15%; ">
+		<!--<p class="block1">«Режим тестирования»</p>-->
+		<form>
+
+			<div id="Navigation">
+				<div class="Labels">
+					<div class="opredelenye">Вопрос №5.</div>
+					<p id="newParagraph"> Пусть А, В и С матрицы одного размера, а λ  и μ некоторые числа. Тогда имеют место равенства:</p>
+					<input type="checkbox" name="answers" value="true"> A + B = B + A +;
+					<p id="newParagraph"></p>
+					<input type="checkbox" name="answers" value="false"> (A + B) + C = A + (B + C) +;
+					<p id="newParagraph"></p>
+					<input type="checkbox" name="answers" value="false"> λ (A + B) = λA + λB +;
+					<p id="newParagraph"></p>
+					<input type="checkbox" name="answers" value="false"> (λ∗μ)A = λ (μ * A) +;
+					<p id="newParagraph"></p>
+					<input type="checkbox" name="answers" value="false"> (λ+μ)A = λA + A.
+				</div>
+			</div>
+			<p id="newParagraph"></p>
+
+		</form>
+
+	</div>
+
+</div>
+
+<div id="SixQuestion">
+
+	<div id="main" style="left: 50%; margin-top: 15%; ">
+		<!--<p class="block1">«Режим тестирования»</p>-->
+		<form>
+
+			<div id="Navigation">
+				<div class="Labels">
+					<div class="opredelenye">Вопрос №6.</div>
+					<p id="newParagraph"> В каком случае можно перемножать матрицы <em>A</em> и <em>B</em> ?</p>
+					<input type="radio" name="answers" value="true"> Умножать матрицу   <em>A</em>   на матрицу   <em>B</em>   можно лишь когда число <ins>столбцов</ins> матрицы  <em>A</em>  равно числу <ins>строк</ins>  матрицы  <em>B</em>+.
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false"> Умножать матрицу   <em>A</em>   на матрицу   <em>B</em>   можно лишь когда число <ins>строк</ins> матрицы  <em>A</em>  равно числу <ins>столбцов</ins>  матрицы  <em>B</em>.
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false"> Умножать матрицу   <em>A</em>  на матрицу   <em>B</em>   можно лишь когда <ins>определитель</ins> матрицы  <em>A</em>  равен <ins>определителю</ins> матрицы  <em>B</em>.
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false"> Умножать матрицу   <em>A</em>   на матрицу   <em>B</em>   можно лишь когда число <ins>строк и определитель</ins> матрицы  <em>A</em>  равно числу <ins>строк и определителю </ins>  матрицы  <em>B</em>.
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false"> Нет правильного ответа
+				</div>
+			</div>
+			<p id="newParagraph"></p>
+
+		</form>
+
+	</div>
+
+</div>
+
+<div id="SevenQuestion">
+
+	<div id="main" style="left: 50%; margin-top: 15%; ">
+		<!--<p class="block1">«Режим тестирования»</p>-->
+		<form>
+
+			<div id="Navigation">
+				<div class="Labels">
+					<div class="opredelenye">Вопрос №7.</div>
+					<p id="newParagraph"> Произведение матриц вычисляется следующим образом:</p>
+					<input type="radio" name="answers" value="true"> Каждый элемент соответствующего столбца первой матрицы умножается на каждый элемент такого же по порядку столбца второй матрицы и их произведение записывается в элемент соответствующего столбца матрицы-произведения.
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false"> Каждый элемент соответствующего столбца первой матрицы складывается с каждым элементом такого же по порядку столбца второй матрицы и их сумма записывается в элемент соответствующего столбца матрицы-произведения.
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false"> Каждый элемент соответствующего столбца первой матрицы умножается на каждый элемент такой же по порядку строки второй матрицы и их произведение записывается в элемент соответствующего столбца матрицы-произведения
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false"> Каждый элемент каждой строки первой матрицы умножается на соответствующий по порядку элемент каждого столбца второй матрицы и их сумма записывается в элемент, первый индекс которого равен номеру строки первой матрицы, а второй индекс – номеру столбца второй матрицы +
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false"> Нет правильного ответа.
+				</div>
+			</div>
+			<p id="newParagraph"></p>
+
+		</form>
+
+	</div>
+
+</div>
+
+<div id="EightQuestion">
+
+	<div id="main" style="left: 50%; margin-top: 15%; ">
+		<!--<p class="block1">«Режим тестирования»</p>-->
+		<form>
+
+			<div id="Navigation">
+				<div class="Labels">
+					<div class="opredelenye">Вопрос №8.</div>
+					<p id="newParagraph"> Определитель произведения двух квадратных матриц равен:</p>
+					<input type="radio" name="answers" value="true">  Произведению их определителей.+
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false"> Сумме их определителей.
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false"> Нулю.
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false"> Единице.
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false"> Разности их определителей.
+				</div>
+			</div>
+			<p id="newParagraph"></p>
+
+		</form>
+
+	</div>
+
+</div>
+
+<div id="NineQuestion">
+
+	<div id="main" style="left: 50%; margin-top: 15%; ">
+		<!--<p class="block1">«Режим тестирования»</p>-->
+		<form>
+
+			<div id="Navigation">
+				<div class="Labels">
+					<div class="opredelenye">Вопрос №9.</div>
+					<p id="newParagraph"> Обратная матрица для особой матрицы:</p>
+					<input type="radio" name="answers" value="true"> Существует и только одна.
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false"> Существует, причём несколько.
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false"> Существует и это транспонированная матрица.
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false"> Не существует.+
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false"> Нет правильного ответа.
+				</div>
+			</div>
+			<p id="newParagraph"></p>
+
+		</form>
+
+	</div>
+
+</div>
+
+<div id="TenQuestion">
+
+	<div id="main" style="left: 50%; margin-top: 15%; ">
+		<!--<p class="block1">«Режим тестирования»</p>-->
+		<form>
+
+			<div id="Navigation">
+				<div class="Labels">
+					<div class="opredelenye">Вопрос №10.</div>
+					<p id="newParagraph"> Присоединённой матрицей к квадратной матрице является:</p>
+					<input type="radio" name="answers" value="true"> Матрица того же порядка.+
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false"> Матрица, определитель которой равен определителю данной матрицы.
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false"> Матрица порядка на один меньше, чем у данной матрицы.
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false">  Такая матрица, что произведение их определителей равно единице
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false"> Все ответы верны
+				</div>
+			</div>
+			<p id="newParagraph"></p>
+
+		</form>
+
+	</div>
+
+</div>
+
+
+<div id="NavigatonPanel">
+	<div style="margin: 10% 20% auto 20%; text-align: center;">
+		
+		<input id="IdButtonFirstQuestion" class="dws-question" type="button" value="1" onclick="ShowQuestions(1)">
+		<input id="IdButtonSecondQuestion" class="dws-question" type="button" value="2" onclick="ShowQuestions(2)">
+		<input id="IdButtonThirdQuestion" class="dws-question" type="button" value="3" onclick="ShowQuestions(3)">
+		<input id="IdButtonFourQuestion" class="dws-question" type="button" value="4" onclick="ShowQuestions(4)">
+		<input id="IdButtonFiveQuestion" class="dws-question" type="button" value="5" onclick="ShowQuestions(5)">
+		<input id="IdButtonSixQuestion" class="dws-question" type="button" value="6" onclick="ShowQuestions(6)">
+		<input id="IdButtonSevenQuestion" class="dws-question" type="button" value="7" onclick="ShowQuestions(7)">
+		<input id="IdButtonEightQuestion" class="dws-question" type="button" value="8" onclick="ShowQuestions(8)">
+		<input id="IdButtonNineQuestion" class="dws-question" type="button" value="9" onclick="ShowQuestions(9)">
+		<input id="IdButtonTenQuestion" class="dws-question" type="button" value="10" onclick="ShowQuestions(10)">
+	</div>
+
+	<div style=" text-align: right; margin-right: 10%;">
+		<input id="finishTesting" class="dws-sumbit" type="button" value="Завершить тестирование" style=" margin: 0 0 auto 80%; cursor: pointer;" onclick="FinishTesting();" >
+		<p>
+			До окончания теста осталось: <b><span id="mT" >00:15:00</span></b>
+		</p>
+
+	</div>
+
+</div>
+	
+
+<dialog id="confirm-finish" class="site-dialog">
+	<header class="dialog-header">
+            <h1>Подтверждение завершения тестирования</h1>
+      </header>
+      
+      <div class="dialog-content">
+            <p>До окончания теста еще осталось время. Вы уверены, что хотите завершить тестирование?</p>
+       </div>
+       
+       <div class="btn-group">
+            <button id="yes">Да</button>
+            <button id="cancel">Отмена</button>
+       </div>
+</dialog>
+
+
+	<div style="bottom: 0px; position: absolute; width: 100%;">
+		<p style="float: right; margin-top: 70px; color: grey;">@Copyrigth Куликов А.Ю. гр.4-80 к</p>
+	</div>
+</body>
+
+</html>

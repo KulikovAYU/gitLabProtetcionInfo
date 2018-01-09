@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Контрольная работа(Вар3)</title>
+	<script src="Program.js" defer></script>
+	<link href="PageStyle.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body onload="startTimer()">
+
+<div id="FirstQuestion">
+
+	<div id="main" style="left: 50%; margin-top: 10%; ">
+		<!--<p class="block1">«Режим тестирования»</p>-->
+		<form>
+
+			<div id="Navigation">
+				<div class="Labels">
+					<div class="opredelenye">Вопрос №1.</div>
+					<p id="newParagraph"> Матрица размера mxn это:</p>
+					<input type="radio" name="answers" value="true"> Прямоугольная таблица специального вида, состоящая из <em>n</em> строк и <em>m</em> столбцов, заполненная числами.
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false"> Прямоугольная таблица специального вида, состоящая из <em>n</em> столбцов и <em>m</em> строк, заполненная числами.
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false"> Совокупность <em>m</em> и <em>n</em> чисел, расположенных в одной стрке
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false"> Нет правильного ответа
+					<p id="newParagraph"></p>
+					<input type="radio" name="answers" value="false"> Все ответы верны
+				</div>
+			</div>
+			<p id="newParagraph"></p>
+
+		</form>
+
+	</div>
+
+	<div style="margin: 50px 20% auto 20%; text-align: center;">
+		<input id="testBtn" name="dwsQuestion" class="dws-question" type="button" value="1" onclick="SelectFirstQuestion()" style="">
+		<input class="dws-question" type="button" value="2" onclick="SelectSecQuestion()" style="">
+		<input class="dws-question" type="button" value="3" onclick="SelectThirdQuestion()" style="">
+		<input class="dws-question" type="button" value="4" onclick="SelectFourthQuestion()" style="">
+		<input class="dws-question" type="button" value="5" onclick="SelectFiveQuestion()" style="">
+		<input class="dws-question" type="button" value="6" onclick="SelectSixQuestion()" style="">
+		<input class="dws-question" type="button" value="7" onclick="SelectSevenQuestion()" style="">
+		<input class="dws-question" type="button" value="8" onclick="SelectEightQuestion()" style="">
+		<input class="dws-question" type="button" value="9" onclick="SelectNineQuestion()" style="">
+		<input class="dws-question" type="button" value="10" onclick="SelectTenQuestion()" style="">
+	</div>
+
+	<div style=" text-align: right; margin-right: 10%;">
+		<input class="dws-sumbit" type="button" value="Завершить тестирование" style=" margin: 0 0 auto 80%; cursor: pointer;" onclick="Registration();">
+		<p>
+			До окончания теста осталось: <b><span id="mT" >00:15:00</span></b>
+		</p>
+
+	</div>
+</div>
+
+</body>
+
+</html>
