@@ -1,0 +1,45 @@
+C:\Users\Федор\Desktop\7 семестр\Тестирование\TestingGraph\TestingGraph.Tests\bin\Debug\TestingGraph.Tests.dll
+C:\Users\Федор\Desktop\7 семестр\Тестирование\TestingGraph\TestingGraph.Tests\bin\Debug\TestingGraph.Tests.pdb
+C:\Users\Федор\Desktop\7 семестр\Тестирование\TestingGraph\TestingGraph.Tests\bin\Debug\Castle.Core.dll
+C:\Users\Федор\Desktop\7 семестр\Тестирование\TestingGraph\TestingGraph.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Федор\Desktop\7 семестр\Тестирование\TestingGraph\TestingGraph.Tests\bin\Debug\Moq.dll
+C:\Users\Федор\Desktop\7 семестр\Тестирование\TestingGraph\TestingGraph.Tests\bin\Debug\TestingGraph.exe
+C:\Users\Федор\Desktop\7 семестр\Тестирование\TestingGraph\TestingGraph.Tests\bin\Debug\TestingGraph.pdb
+C:\Users\Федор\Desktop\7 семестр\Тестирование\TestingGraph\TestingGraph.Tests\bin\Debug\Castle.Core.xml
+C:\Users\Федор\Desktop\7 семестр\Тестирование\TestingGraph\TestingGraph.Tests\bin\Debug\Moq.pdb
+C:\Users\Федор\Desktop\7 семестр\Тестирование\TestingGraph\TestingGraph.Tests\bin\Debug\Moq.xml
+C:\Users\Федор\Desktop\7 семестр\Тестирование\TestingGraph\TestingGraph.Tests\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\Федор\Desktop\7 семестр\Тестирование\TestingGraph\TestingGraph.Tests\obj\Debug\TestingGraph.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Федор\Desktop\7 семестр\Тестирование\TestingGraph\TestingGraph.Tests\obj\Debug\TestingGraph.Tests.dll
+C:\Users\Федор\Desktop\7 семестр\Тестирование\TestingGraph\TestingGraph.Tests\obj\Debug\TestingGraph.Tests.pdb
+d:\Учеба ФЗВО\9 семестр\Тестирование ПО Зубков В.П\Чесноков\Matrix\TestingGraph.Tests\bin\Debug\TestingGraph.Tests.dll
+d:\Учеба ФЗВО\9 семестр\Тестирование ПО Зубков В.П\Чесноков\Matrix\TestingGraph.Tests\bin\Debug\TestingGraph.Tests.pdb
+d:\Учеба ФЗВО\9 семестр\Тестирование ПО Зубков В.П\Чесноков\Matrix\TestingGraph.Tests\bin\Debug\Castle.Core.dll
+d:\Учеба ФЗВО\9 семестр\Тестирование ПО Зубков В.П\Чесноков\Matrix\TestingGraph.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+d:\Учеба ФЗВО\9 семестр\Тестирование ПО Зубков В.П\Чесноков\Matrix\TestingGraph.Tests\bin\Debug\Moq.dll
+d:\Учеба ФЗВО\9 семестр\Тестирование ПО Зубков В.П\Чесноков\Matrix\TestingGraph.Tests\bin\Debug\TestingGraph.exe
+d:\Учеба ФЗВО\9 семестр\Тестирование ПО Зубков В.П\Чесноков\Matrix\TestingGraph.Tests\bin\Debug\TestingGraph.pdb
+d:\Учеба ФЗВО\9 семестр\Тестирование ПО Зубков В.П\Чесноков\Matrix\TestingGraph.Tests\bin\Debug\Castle.Core.xml
+d:\Учеба ФЗВО\9 семестр\Тестирование ПО Зубков В.П\Чесноков\Matrix\TestingGraph.Tests\bin\Debug\Moq.pdb
+d:\Учеба ФЗВО\9 семестр\Тестирование ПО Зубков В.П\Чесноков\Matrix\TestingGraph.Tests\bin\Debug\Moq.xml
+d:\Учеба ФЗВО\9 семестр\Тестирование ПО Зубков В.П\Чесноков\Matrix\TestingGraph.Tests\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+d:\Учеба ФЗВО\9 семестр\Тестирование ПО Зубков В.П\Чесноков\Matrix\TestingGraph.Tests\obj\Debug\TestingGraph.Tests.csprojResolveAssemblyReference.cache
+d:\Учеба ФЗВО\9 семестр\Тестирование ПО Зубков В.П\Чесноков\Matrix\TestingGraph.Tests\obj\Debug\TestingGraph.Tests.dll
+d:\Учеба ФЗВО\9 семестр\Тестирование ПО Зубков В.П\Чесноков\Matrix\TestingGraph.Tests\obj\Debug\TestingGraph.Tests.pdb
+F:\YandexDisk\ИГЭУ\Сессия_зима_5_курс\ТПО Заочники Материалы на выдачу\ТПО=Куликов\Matrix\TestingGraph.Tests\bin\Debug\TestingGraph.Tests.dll
+F:\YandexDisk\ИГЭУ\Сессия_зима_5_курс\ТПО Заочники Материалы на выдачу\ТПО=Куликов\Matrix\TestingGraph.Tests\bin\Debug\TestingGraph.Tests.pdb
+F:\YandexDisk\ИГЭУ\Сессия_зима_5_курс\ТПО Заочники Материалы на выдачу\ТПО=Куликов\Matrix\TestingGraph.Tests\bin\Debug\Castle.Core.dll
+F:\YandexDisk\ИГЭУ\Сессия_зима_5_курс\ТПО Заочники Материалы на выдачу\ТПО=Куликов\Matrix\TestingGraph.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+F:\YandexDisk\ИГЭУ\Сессия_зима_5_курс\ТПО Заочники Материалы на выдачу\ТПО=Куликов\Matrix\TestingGraph.Tests\bin\Debug\Moq.dll
+F:\YandexDisk\ИГЭУ\Сессия_зима_5_курс\ТПО Заочники Материалы на выдачу\ТПО=Куликов\Matrix\TestingGraph.Tests\bin\Debug\TestingGraph.exe
+F:\YandexDisk\ИГЭУ\Сессия_зима_5_курс\ТПО Заочники Материалы на выдачу\ТПО=Куликов\Matrix\TestingGraph.Tests\bin\Debug\TestingGraph.pdb
+F:\YandexDisk\ИГЭУ\Сессия_зима_5_курс\ТПО Заочники Материалы на выдачу\ТПО=Куликов\Matrix\TestingGraph.Tests\bin\Debug\TestingGraph.exe.config
+F:\YandexDisk\ИГЭУ\Сессия_зима_5_курс\ТПО Заочники Материалы на выдачу\ТПО=Куликов\Matrix\TestingGraph.Tests\bin\Debug\Castle.Core.xml
+F:\YandexDisk\ИГЭУ\Сессия_зима_5_курс\ТПО Заочники Материалы на выдачу\ТПО=Куликов\Matrix\TestingGraph.Tests\bin\Debug\Moq.pdb
+F:\YandexDisk\ИГЭУ\Сессия_зима_5_курс\ТПО Заочники Материалы на выдачу\ТПО=Куликов\Matrix\TestingGraph.Tests\bin\Debug\Moq.xml
+F:\YandexDisk\ИГЭУ\Сессия_зима_5_курс\ТПО Заочники Материалы на выдачу\ТПО=Куликов\Matrix\TestingGraph.Tests\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+F:\YandexDisk\ИГЭУ\Сессия_зима_5_курс\ТПО Заочники Материалы на выдачу\ТПО=Куликов\Matrix\TestingGraph.Tests\obj\Debug\TestingGraph.Tests.csprojAssemblyReference.cache
+F:\YandexDisk\ИГЭУ\Сессия_зима_5_курс\ТПО Заочники Материалы на выдачу\ТПО=Куликов\Matrix\TestingGraph.Tests\obj\Debug\TestingGraph.Tests.csproj.CoreCompileInputs.cache
+F:\YandexDisk\ИГЭУ\Сессия_зима_5_курс\ТПО Заочники Материалы на выдачу\ТПО=Куликов\Matrix\TestingGraph.Tests\obj\Debug\TestingGraph.Tests.csproj.CopyComplete
+F:\YandexDisk\ИГЭУ\Сессия_зима_5_курс\ТПО Заочники Материалы на выдачу\ТПО=Куликов\Matrix\TestingGraph.Tests\obj\Debug\TestingGraph.Tests.dll
+F:\YandexDisk\ИГЭУ\Сессия_зима_5_курс\ТПО Заочники Материалы на выдачу\ТПО=Куликов\Matrix\TestingGraph.Tests\obj\Debug\TestingGraph.Tests.pdb
