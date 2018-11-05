@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TestingGraph.UserControls
@@ -15,6 +8,15 @@ namespace TestingGraph.UserControls
         public StartPanel()
         {
             InitializeComponent();
+        }
+
+        private void SmezButton_Click(object sender, EventArgs e)
+        {
+           var parent = this.Controls.Owner.Parent.Parent;
+            if (parent is Form2 form)
+            {
+                form.AddChild(ETypeControls.eAdjacencyMatrixInput);
+            }
         }
     }
 }

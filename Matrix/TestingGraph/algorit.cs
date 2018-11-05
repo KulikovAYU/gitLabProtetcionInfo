@@ -10,6 +10,22 @@ namespace TestingGraph
 
         public class algorit
         {
+
+            public static readonly algorit alg;
+
+            static algorit()
+            {
+                if (alg == null)
+                {
+                    alg = new algorit();
+                }
+            }
+
+            public static algorit GetInstance
+        {
+                get { return alg; }
+            }
+
             public int[,] mas;
         // mas[i][j] - максимальная величина потока, способная течь по ребру (i,j) or матрица хранящая граф
 

@@ -50,3 +50,18 @@ F:\YandexDisk\ИГЭУ\Сессия_зима_5_курс\ТПО Заочники 
 F:\YandexDisk\ИГЭУ\Сессия_зима_5_курс\ТПО Заочники Материалы на выдачу\ТПО=Куликов\Matrix\TestingGraph\obj\Debug\TestingGraph.exe
 F:\YandexDisk\ИГЭУ\Сессия_зима_5_курс\ТПО Заочники Материалы на выдачу\ТПО=Куликов\Matrix\TestingGraph\obj\Debug\TestingGraph.pdb
 F:\YandexDisk\ИГЭУ\Сессия_зима_5_курс\ТПО Заочники Материалы на выдачу\ТПО=Куликов\Matrix\TestingGraph\obj\Debug\TestingGraph.Form2.resources
+F:\MyProjects\Matrix\TestingGraph\obj\Debug\TestingGraph.csprojAssemblyReference.cache
+F:\MyProjects\Matrix\TestingGraph\obj\Debug\TestingGraph.Form1.resources
+F:\MyProjects\Matrix\TestingGraph\obj\Debug\TestingGraph.Form2.resources
+F:\MyProjects\Matrix\TestingGraph\obj\Debug\TestingGraph.Properties.Resources.resources
+F:\MyProjects\Matrix\TestingGraph\obj\Debug\TestingGraph.UserControls.StartPanel.resources
+F:\MyProjects\Matrix\TestingGraph\obj\Debug\TestingGraph.csproj.GenerateResource.cache
+F:\MyProjects\Matrix\TestingGraph\obj\Debug\TestingGraph.csproj.CoreCompileInputs.cache
+F:\MyProjects\Matrix\TestingGraph\obj\Debug\TestingGraph.exe
+F:\MyProjects\Matrix\TestingGraph\obj\Debug\TestingGraph.pdb
+F:\MyProjects\Matrix\TestingGraph\bin\Debug\TestingGraph.exe.config
+F:\MyProjects\Matrix\TestingGraph\bin\Debug\TestingGraph.exe
+F:\MyProjects\Matrix\TestingGraph\bin\Debug\TestingGraph.pdb
+F:\MyProjects\Matrix\TestingGraph\obj\Debug\TestingGraph.UserControls.eAdjacencyMatrixInput.resources
+F:\MyProjects\Matrix\TestingGraph\obj\Debug\TestingGraph.UserControls.eMatrix.resources
+F:\MyProjects\Matrix\TestingGraph\obj\Debug\TestingGraph.UserControls.eShowResult.resources
