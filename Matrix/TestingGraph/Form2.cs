@@ -35,6 +35,27 @@ namespace TestingGraph
             if (ctrl == null)
                 throw new Exception("ctrl is null");
             PresentPanel.Controls.Clear();
+            if (ctrl is eAdjacencyMatrixInput matrix)
+            {
+                switch (type)
+                {
+                    case ETypeControls.eStartPanel:
+                        matrix.DoHideField2();
+                        break;
+                    case ETypeControls.eAdjacencyMatrixInput:
+                        matrix.DoHideField2();
+                        break;
+                    case ETypeControls.eEdgeListInput:
+                    case ETypeControls.eIncidenceMatrixInput:
+                        matrix.DoVisibleField2();
+                        break;
+                  
+                    case ETypeControls.eMatrix:
+                        break;
+                    case ETypeControls.eShowResult:
+                        break;
+                }
+            }
             PresentPanel.Controls.Add(ctrl);
         }
 
@@ -51,6 +72,7 @@ namespace TestingGraph
            
         }
 
+        public ETypeControls CurrentVar { get; set; }
     }
 
 
@@ -67,6 +89,8 @@ namespace TestingGraph
         eShowResult
     }
 
+    
+
     /// <summary>
     ///Фабрика пользовательских элементов упоравления
     /// </summary>
@@ -78,12 +102,10 @@ namespace TestingGraph
             {
                 case ETypeControls.eStartPanel:
                     return new StartPanel();
-                case ETypeControls.eAdjacencyMatrixInput:
-                    return new eAdjacencyMatrixInput();
                 case ETypeControls.eIncidenceMatrixInput:
-                    return null;
+                case ETypeControls.eAdjacencyMatrixInput:
                 case ETypeControls.eEdgeListInput:
-                    return null;
+                    return new eAdjacencyMatrixInput();
                 case ETypeControls.eMatrix:
                     return new eMatrix();
                 case ETypeControls.eShowResult:

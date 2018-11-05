@@ -62,6 +62,6 @@ F:\MyProjects\Matrix\TestingGraph\obj\Debug\TestingGraph.pdb
 F:\MyProjects\Matrix\TestingGraph\bin\Debug\TestingGraph.exe.config
 F:\MyProjects\Matrix\TestingGraph\bin\Debug\TestingGraph.exe
 F:\MyProjects\Matrix\TestingGraph\bin\Debug\TestingGraph.pdb
-F:\MyProjects\Matrix\TestingGraph\obj\Debug\TestingGraph.UserControls.eAdjacencyMatrixInput.resources
-F:\MyProjects\Matrix\TestingGraph\obj\Debug\TestingGraph.UserControls.eMatrix.resources
 F:\MyProjects\Matrix\TestingGraph\obj\Debug\TestingGraph.UserControls.eShowResult.resources
+F:\MyProjects\Matrix\TestingGraph\obj\Debug\TestingGraph.eAdjacencyMatrixInput.resources
+F:\MyProjects\Matrix\TestingGraph\obj\Debug\TestingGraph.eMatrix.resources

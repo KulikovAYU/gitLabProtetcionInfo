@@ -67,10 +67,10 @@
     <Compile Include="UserControls\eAdjacencyMatrixInput.Designer.cs">
       <DependentUpon>eAdjacencyMatrixInput.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\eMatrix.cs">
+    <Compile Include="UserControls\UserControls\eMatrix.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\eMatrix.Designer.cs">
+    <Compile Include="UserControls\UserControls\eMatrix.Designer.cs">
       <DependentUpon>eMatrix.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\eShowResult.cs">
@@ -103,7 +103,7 @@
     <EmbeddedResource Include="UserControls\eAdjacencyMatrixInput.resx">
       <DependentUpon>eAdjacencyMatrixInput.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\eMatrix.resx">
+    <EmbeddedResource Include="UserControls\UserControls\eMatrix.resx">
       <DependentUpon>eMatrix.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\eShowResult.resx">

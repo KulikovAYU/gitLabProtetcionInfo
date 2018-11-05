@@ -35,7 +35,6 @@
             this.setka = new System.Windows.Forms.DataGridView();
             this.TextBox = new System.Windows.Forms.RichTextBox();
             this.Reset = new System.Windows.Forms.Button();
-            this.diskrBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.SmezButton = new System.Windows.Forms.Button();
             this.IntButton = new System.Windows.Forms.Button();
@@ -49,10 +48,11 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.diskrBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.setka)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diskrBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diskrBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // setkaOK
@@ -204,6 +204,7 @@
             this.label3.TabIndex = 29;
             this.label3.Text = "Выбери количество ребер в графе:";
             this.label3.Visible = false;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // numericUpDown2
             // 
@@ -228,6 +229,7 @@
             0,
             0});
             this.numericUpDown2.Visible = false;
+            this.numericUpDown2.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
             // 
             // button2
             // 
@@ -307,9 +309,9 @@
             this.Text = "Diskr";
             this.Load += new System.EventHandler(this.Diskr_Load);
             ((System.ComponentModel.ISupportInitialize)(this.setka)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diskrBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diskrBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

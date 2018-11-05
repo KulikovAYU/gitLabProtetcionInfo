@@ -44,6 +44,7 @@
             this.LinksButton.TabIndex = 29;
             this.LinksButton.Text = "Список ребер";
             this.LinksButton.UseVisualStyleBackColor = true;
+            this.LinksButton.Click += new System.EventHandler(this.LinksButton_Click);
             // 
             // IntButton
             // 
@@ -55,6 +56,7 @@
             this.IntButton.TabIndex = 28;
             this.IntButton.Text = "Матрица инцидентности";
             this.IntButton.UseVisualStyleBackColor = true;
+            this.IntButton.Click += new System.EventHandler(this.IntButton_Click);
             // 
             // SmezButton
             // 
