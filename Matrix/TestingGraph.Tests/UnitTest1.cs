@@ -11,13 +11,13 @@ namespace TestingGraph.Tests
         [TestMethod]
         public void TestMethod1_2_3_6()
         {
-            algorit algo = new algorit();
+            algorhytm algo = new algorhytm();
             int[,] Arr = new int[1, 2];
             Arr[0, 0] = 0; Arr[0, 1] = 1;
-            algo.type = 2;
-            algo.lin = 2;
+            algo.m_buildingType = 2;
+            algo.m_ribsCnt = 2;
             int j = 0;
-            string[] mas1 = new string[algo.lin];
+            string[] mas1 = new string[algo.m_ribsCnt];
             mas1[0] = "0"; mas1[1] = "1";
 
             Assert.AreEqual(algo.RetRow(Arr, j)[0], mas1[0]);
@@ -27,11 +27,11 @@ namespace TestingGraph.Tests
         [TestMethod]
         public void TestMethod1_7_8_6()
         {
-            algorit algo = new algorit();
+            algorhytm algo = new algorhytm();
             int[,] Arr = new int[1, 1];
             Arr[0, 0] = 0;
-            algo.type = 1;
-            algo.lin = 0;
+            algo.m_buildingType = 1;
+            algo.m_ribsCnt = 0;
             int j = 0;
             string[] mas1 = new string[1];
             mas1[0] = "0";
@@ -44,13 +44,13 @@ namespace TestingGraph.Tests
         [TestMethod]
         public void TestMethod1_7_8_9_10_8_6()
         {
-           algorit algo = new algorit();
+           algorhytm algo = new algorhytm();
             int[,] Arr = new int[1, 1];
             Arr[0, 0] = 1; 
-            algo.type = 1;
-            algo.lin = 1;
+            algo.m_buildingType = 1;
+            algo.m_ribsCnt = 1;
             int j = 0;
-            string[] expected = new string[algo.lin];
+            string[] expected = new string[algo.m_ribsCnt];
             expected[0] = "1";
            string[] actual = algo.RetRow(Arr, j);
 
@@ -84,11 +84,11 @@ namespace TestingGraph.Tests
             expression[1, 1] = 1;
 
 
-            var mock = new Mock<algorit>();
+            var mock = new Mock<algorhytm>();
 
             mock.Setup(a => a.RеtRow(expression,1)).Returns(testString);
 
-            algorit algo = mock.Object;
+            algorhytm algo = mock.Object;
 
             string actual = algo.Вulid(expression, 1);
 
@@ -117,11 +117,11 @@ namespace TestingGraph.Tests
             expression[1, 1] = 0;
 
 
-            var mock = new Mock<algorit>();
+            var mock = new Mock<algorhytm>();
 
             mock.Setup(a => a.RеtRow(expression, 2)).Returns(testString);
 
-            algorit algo = mock.Object;
+            algorhytm algo = mock.Object;
 
             string actual = algo.Вulid(expression, 2);
 
@@ -152,7 +152,7 @@ namespace TestingGraph.Tests
 
             expression[1, 1] = 0;
 
-            algorit algo = new algorit();
+            algorhytm algo = new algorhytm();
 
             string actual = algo.Вulid(expression, 1);
 
@@ -182,7 +182,7 @@ namespace TestingGraph.Tests
             expression[1, 1] = 0;
 
 
-            algorit algo = new algorit();
+            algorhytm algo = new algorhytm();
 
             string actual = algo.Вulid(expression, 2);
 
@@ -193,11 +193,11 @@ namespace TestingGraph.Tests
         [TestMethod]
         public void TestMethod21_2_3_6()
         {
-            algorit algo = new algorit();
+            algorhytm algo = new algorhytm();
             int[,] Arr = new int[1, 1];
             Arr[0, 0] = 0; 
-            algo.type = 2;
-            algo.lin = 0;
+            algo.m_buildingType = 2;
+            algo.m_ribsCnt = 0;
             int j = 0;
             int count = 0;
 
@@ -207,11 +207,11 @@ namespace TestingGraph.Tests
         [TestMethod]
         public void TestMethod21_8_9_6()
         {
-            algorit algo = new algorit();
+            algorhytm algo = new algorhytm();
             int[,] Arr = new int[1, 2];
             Arr[0, 0] = 1; Arr[0, 1] = 0;
-            algo.type = 1;
-            algo.lin = 0;
+            algo.m_buildingType = 1;
+            algo.m_ribsCnt = 0;
             int j = 0;
             int count = 1;
 
@@ -223,11 +223,11 @@ namespace TestingGraph.Tests
         [TestMethod]
         public void TestMethod21_2_3_4_6_3_7()
         {
-            algorit algo = new algorit();
+            algorhytm algo = new algorhytm();
             int[,] Arr = new int[1, 1];
             Arr[0, 0] = 0; 
-            algo.type = 1;
-            algo.lin = 1;
+            algo.m_buildingType = 1;
+            algo.m_ribsCnt = 1;
             int j = 0;
             int count = 0;
 
@@ -240,11 +240,11 @@ namespace TestingGraph.Tests
         [TestMethod]
         public void TestMethod21_8_9_10_12_9_7()
         {
-            algorit algo = new algorit();
+            algorhytm algo = new algorhytm();
             int[,] Arr = new int[1, 1];
             Arr[0, 0] = 0; 
-            algo.type = 1;
-            algo.lin = 1;
+            algo.m_buildingType = 1;
+            algo.m_ribsCnt = 1;
             int j = 0;
             int count = 0;
 
@@ -256,11 +256,11 @@ namespace TestingGraph.Tests
         [TestMethod]
         public void TestMethod21_2_3_4_5_6_3_7()
         {
-            algorit algo = new algorit();
+            algorhytm algo = new algorhytm();
             int[,] Arr = new int[1, 4];
             Arr[0, 0] = 1; Arr[0, 1] = 1; Arr[0, 2] = 1; Arr[0, 3] = 1;
-            algo.type = 1;
-            algo.lin = 4;
+            algo.m_buildingType = 1;
+            algo.m_ribsCnt = 4;
             int j = 0;
             int count = 4;
 
@@ -273,11 +273,11 @@ namespace TestingGraph.Tests
         [TestMethod]
         public void TestMethod21_8_9_10_11_12_9_7()
         {
-            algorit algo = new algorit();
+            algorhytm algo = new algorhytm();
             int[,] Arr = new int[1, 4];
             Arr[0, 0] = 1; Arr[0, 1] = 0; Arr[0, 2] = 1; Arr[0, 3] = 0;
-            algo.type = 1;
-            algo.lin = 4;
+            algo.m_buildingType = 1;
+            algo.m_ribsCnt = 4;
             int j = 0;
             int count = 2;
 
@@ -301,9 +301,9 @@ namespace TestingGraph.Tests
             mass[0, 1] = 1;
             mass[0, 0] = 1;
 
-            var mock = new Mock<algorit>();
+            var mock = new Mock<algorhytm>();
             mock.Setup(a => a.CountUnits(mass, 0)).Returns(2);
-            algorit algo = new algorit();
+            algorhytm algo = new algorhytm();
 
             bool actual = algo.Check(exp, 2);
 
@@ -323,9 +323,9 @@ namespace TestingGraph.Tests
             mass[0, 1] = 1;
             mass[0, 0] = 1;
 
-            var mock = new Mock<algorit>();
+            var mock = new Mock<algorhytm>();
             mock.Setup(a => a.CountUnits(mass, 0)).Returns(2);
-            algorit algo = new algorit();
+            algorhytm algo = new algorhytm();
 
             bool actual = algo.Check(exp, 4);
 
@@ -347,9 +347,9 @@ namespace TestingGraph.Tests
             mass[0, 1] = 1;
             mass[0, 0] = 1;
 
-            var mock = new Mock<algorit>();
+            var mock = new Mock<algorhytm>();
             mock.Setup(a => a.CountUnits(mass, 0)).Returns(2);
-            algorit algo = new algorit();
+            algorhytm algo = new algorhytm();
 
             bool actual = algo.Check(exp, 3);
 
@@ -372,7 +372,7 @@ namespace TestingGraph.Tests
 
             expression[1, 1] = 1;
 
-            algorit algo = new algorit();
+            algorhytm algo = new algorhytm();
 
             bool actual = algo.Check(expression, 4);
 
@@ -392,7 +392,7 @@ namespace TestingGraph.Tests
 
             expression[1, 1] = 0;
 
-            algorit algo = new algorit();
+            algorhytm algo = new algorhytm();
 
             bool actual = algo.Check(expression, 2);
 
@@ -411,7 +411,7 @@ namespace TestingGraph.Tests
 
             expression[1, 1] = 0;
 
-            algorit algo = new algorit();
+            algorhytm algo = new algorhytm();
 
             bool actual = algo.Check(expression, 2);
 

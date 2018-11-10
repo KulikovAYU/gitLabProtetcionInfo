@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TestingGraph.UserControls;
 
@@ -35,7 +28,7 @@ namespace TestingGraph
             if (ctrl == null)
                 throw new Exception("ctrl is null");
             PresentPanel.Controls.Clear();
-            if (ctrl is eAdjacencyMatrixInput matrix)
+            if (ctrl is InputData matrix)
             {
                 switch (type)
                 {
@@ -49,7 +42,6 @@ namespace TestingGraph
                     case ETypeControls.eIncidenceMatrixInput:
                         matrix.DoVisibleField2();
                         break;
-                  
                     case ETypeControls.eMatrix:
                         break;
                     case ETypeControls.eShowResult:
@@ -105,11 +97,11 @@ namespace TestingGraph
                 case ETypeControls.eIncidenceMatrixInput:
                 case ETypeControls.eAdjacencyMatrixInput:
                 case ETypeControls.eEdgeListInput:
-                    return new eAdjacencyMatrixInput();
+                    return new InputData();
                 case ETypeControls.eMatrix:
                     return new eMatrix();
                 case ETypeControls.eShowResult:
-                    return new eShowResult();
+                    return new ShowResult();
                 default:
                     return null;
             }

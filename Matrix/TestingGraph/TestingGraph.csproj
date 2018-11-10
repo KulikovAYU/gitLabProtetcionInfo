@@ -46,13 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="algorit.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
+    <Compile Include="algorhytm.cs" />
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,23 +55,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserControls\eAdjacencyMatrixInput.cs">
+    <Compile Include="UserControls\InputData.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\eAdjacencyMatrixInput.Designer.cs">
-      <DependentUpon>eAdjacencyMatrixInput.cs</DependentUpon>
+    <Compile Include="UserControls\InputData.Designer.cs">
+      <DependentUpon>InputData.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UserControls\eMatrix.cs">
+    <Compile Include="UserControls\eMatrix.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UserControls\eMatrix.Designer.cs">
+    <Compile Include="UserControls\eMatrix.Designer.cs">
       <DependentUpon>eMatrix.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\eShowResult.cs">
+    <Compile Include="UserControls\ShowResult.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\eShowResult.Designer.cs">
-      <DependentUpon>eShowResult.cs</DependentUpon>
+    <Compile Include="UserControls\ShowResult.Designer.cs">
+      <DependentUpon>ShowResult.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\StartPanel.cs">
       <SubType>UserControl</SubType>
@@ -85,9 +79,6 @@
     <Compile Include="UserControls\StartPanel.Designer.cs">
       <DependentUpon>StartPanel.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,14 +91,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UserControls\eAdjacencyMatrixInput.resx">
-      <DependentUpon>eAdjacencyMatrixInput.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\InputData.resx">
+      <DependentUpon>InputData.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UserControls\eMatrix.resx">
+    <EmbeddedResource Include="UserControls\eMatrix.resx">
       <DependentUpon>eMatrix.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\eShowResult.resx">
-      <DependentUpon>eShowResult.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\ShowResult.resx">
+      <DependentUpon>ShowResult.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\StartPanel.resx">
       <DependentUpon>StartPanel.cs</DependentUpon>
@@ -125,6 +116,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
