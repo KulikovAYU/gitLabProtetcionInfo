@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.LabBTN5 = new System.Windows.Forms.Button();
             this.LabBTN4 = new System.Windows.Forms.Button();
             this.LabBTN3 = new System.Windows.Forms.Button();
             this.LabBTN2 = new System.Windows.Forms.Button();
@@ -36,7 +37,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.LabBTN5 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -52,6 +52,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(352, 249);
             this.panel1.TabIndex = 0;
+            // 
+            // LabBTN5
+            // 
+            this.LabBTN5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabBTN5.Location = new System.Drawing.Point(0, 191);
+            this.LabBTN5.Name = "LabBTN5";
+            this.LabBTN5.Size = new System.Drawing.Size(349, 41);
+            this.LabBTN5.TabIndex = 5;
+            this.LabBTN5.Text = "Лаб N5";
+            this.LabBTN5.UseVisualStyleBackColor = true;
+            this.LabBTN5.Click += new System.EventHandler(this.LabBTN5_Click);
             // 
             // LabBTN4
             // 
@@ -126,16 +137,6 @@
             this.label3.Size = new System.Drawing.Size(342, 40);
             this.label3.TabIndex = 4;
             this.label3.Text = "TODO: Внимание, запускаемая форма -\r\n текущая форма проекта";
-            // 
-            // LabBTN5
-            // 
-            this.LabBTN5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabBTN5.Location = new System.Drawing.Point(0, 191);
-            this.LabBTN5.Name = "LabBTN5";
-            this.LabBTN5.Size = new System.Drawing.Size(349, 41);
-            this.LabBTN5.TabIndex = 5;
-            this.LabBTN5.Text = "Лаб N5";
-            this.LabBTN5.UseVisualStyleBackColor = true;
             // 
             // label4
             // 

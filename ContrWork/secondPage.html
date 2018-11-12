@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Контрольная работа(Вар3)</title>
+	<link href="PageStyle.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+	<div id="main">
+
+		<p class="block1">«Матрицы. Виды матриц. Основные термины.»</p>
+
+		<div id="Navigation">
+			<div class="Labels">
+				<div class="oms_definition">Содержание темы:</div>
+				<li><a href=firstPage.html>Определение матрицы и её элемента. Обозначения</a></li>
+				<li><a href=secondPage.html>Виды матриц в зависимости от их размера. Главная и побочная диагонали. След матрицы.</a></li>
+				<li><a href=thirdPage.html>Виды матриц в зависимости от значений их элементов.</a></li>
+				<li><a href=startTestPage.html>Пройти тестирование</a></li>
+
+			</div>
+		</div>
+
+		<h3 class="header">Виды матриц в зависимости от их размера. Главная и побочная диагонали. След матрицы.</h3>
+		<p id="newParagraph"> Пусть задана некая матрица <em>A<sub>m×n</sub></em>. Если <em>m=1</em>(матрица сосстоит из одной строки), то заданную матрицу называют <em>матрица-строка</em>. Если же <em>n=1</em> (матрица состоит из одного столбца), то такую матрицу называют <em>матрица-столбец</em>. </p>
+
+		<div id="Navigation">
+			<div class="Labels">
+				<div class="opredelenye">Определение.</div>
+				Строка матрицы называется <b>нулевой</b>, если все её элементы равны нулю. Если хотя бы один из элементов строки матрицы не равен нулю, то строка называется <b>ненулевой</b>.
+				<p id="newParagraph">
+					<div class="opredelenye" style="color: green;">Пример</div>
+					<img src="Images/2_example1.png" alt="example1" title="Пример нулевой строки" align="middle">
+			</div>
+		</div>
+		<p id="newParagraph"> </p>
+		<div id="Navigation">
+			<div class="Labels">
+				<div class="opredelenye">Определение.</div>
+				Столбец матрицы называется <b>нулевой</b>, если все его элементы равны нулю. Если хотя бы один из элементов столбца матрицы не равен нулю, то столбец называется <b>ненулевым</b>.
+				<p id="newParagraph">
+					<div class="opredelenye" style="color: green;">Пример</div>
+					<img src="Images/2_example2.png" alt="example2" title="Пример нулевой строки" align="middle">
+			</div>
+		</div>
+
+		<p id="newParagraph"> Если для матрицы <em>A<sub>m×n</sub></em> верно условие <em>m≠n</em> (т.е. количество строк не равно количеству столбцов), то часто говорят, что <em>A - </em> прямоугольная матрица. Например, матрица <img src="Images/2_example3.png" alt="example3" title="Матрица 2x4" align="middle"> имеет размер 2×4, т.е. содержит 2 строки и 4 столбца. Так как количество строк не равно количеству столбцов, то эта матрица является прямоугольной. </p>
+
+		<p id="newParagraph"> Если для матрицы <em>A<sub>m×n</sub></em> верно условие <em>m=n</em> (т.е. количество строк равно количеству столбцов), то говорят, что A – квадратная матрица порядка n. Например, <img src="Images/2_example4.png" alt="example4" title="Квадратная матрица 2x2" align="middle"> – квадратная матрица второго порядка; <img src="Images/2_example5.png" alt="example5" title="Квадратная матрица 3x3" align="middle"> – квадратная матрица третьего порядка.</p>
+
+
+		<p id="newParagraph"> В общем виде квадратную матрицу <em>A<sub>m×n</sub></em> верно условие <em>m=n</em> можно записать так: <img src="Images/2_example6.png" alt="example6" title="Квадратная матрица nxn" align="middle"> </p>
+
+		<div id="Navigation">
+			<div class="Labels">
+				<div class="opredelenye">Определение.</div>
+				<p id="newParagraph"> <b>Главной диагональю матрицы</b> называется диагональ, проведённая из левого верхнего угла матрицы в правый нижний угол.</p>
+			</div>
+		</div>
+
+		<p id="newParagraph"> </p>
+		<div id="Navigation">
+			<div class="Labels">
+				<div class="opredelenye">Определение.</div>
+				<p id="newParagraph"> <b>Побочной диагональю матрицы </b> называется диагональ, проведённая из левого нижнего угла матрицы в правый верхний угол.</p>
+			</div>
+		</div>
+
+		<p id="newParagraph">
+			Например, для матрицы
+			<img src="Images/2_example7.png" alt="example7" title="Матрица" align="middle"> имеем:
+		</p>
+		<div style="text-align: center;">
+			<img src="Images/2_example8.png" alt="example8" title="Диагонали матрицы">
+		</div>
+
+		<p id="newParagraph">
+			Элементы <em>c<sub>11</sub>=2, c<sub>22</sub>=9, c<sub>33</sub>=4, c<sub>44</sub>=6</em> являются главными диагональными элементами; элементы <em>c<sub>14</sub>=1, c<sub>23</sub>=8, c<sub>32</sub>=0, c<sub>41</sub>=-4</em> – побочные диагональные элементы.
+		</p>
+
+		<p id="newParagraph"> </p>
+		<div id="Navigation">
+			<div class="Labels">
+				<div class="opredelenye">Определение.</div>
+				<p id="newParagraph"> <b>Следом матрицы </b> называется сумма диагональных элементов матрицы.</p>
+				<p id="newParagraph"> <b> След матрицы </b> обозначается
+					<em>trA = a<sub>11</sub>+a<sub>22</sub>...+a<sub>nn</sub> .</em>
+				</p>
+			</div>
+		</div>
+
+		<p id="newParagraph">
+			Например, для матрицы <img src="Images/2_example9.png" alt="example9" title="Пример" align="middle"> имеем: <em style="font-size: 14pt;">TrC = 2+9+4+6=21.</em>
+		</p>
+
+		<p id="newParagraph">
+			Понятие диагональных элементов используется также и для неквадратных матриц. Например, для матрицы
+			<img src="Images/2_example10.png" alt="example10" title="Матрица" align="middle"> главными диагональными элементами будут <em>b<sub>11</sub>=2, b<sub>22</sub>=-9, b<sub>33</sub>=4 .</em>
+		</p>
+	</div>
+
+	<div id="copyrigth">
+		<p style="float: right; margin-top: 70px; color: grey;">@Copyrigth Куликов А.Ю. гр.4-80 к</p>
+	</div>
+
+
+
+</body>
+
+</html>

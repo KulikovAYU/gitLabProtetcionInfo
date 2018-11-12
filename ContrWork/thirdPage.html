@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Контрольная работа(Вар3)</title>
+	<link href="PageStyle.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+	<div id="main">
+
+		<p class="block1">«Матрицы. Виды матриц. Основные термины.»</p>
+
+		<div id="Navigation">
+			<div class="Labels">
+				<div class="oms_definition">Содержание темы:</div>
+				<li><a href=firstPage.html>Определение матрицы и её элемента. Обозначения</a></li>
+				<li><a href=secondPage.html>Виды матриц в зависимости от их размера. Главная и побочная диагонали. След матрицы.</a></li>
+				<li><a href=thirdPage.html>Виды матриц в зависимости от значений их элементов.</a></li>
+				<li><a href=startTestPage.html>Пройти тестирование</a></li>
+
+			</div>
+		</div>
+
+		<h3 class="header">Виды матриц в зависимости от значений их элементов.</h3>
+
+		<p id="newParagraph"> Если все элементы матрицы <em>A<sub>m×n</sub></em> равны нулю, то такая матрица называется <em>нулевой</em> и обозначается обычно буквой <em>O</em>. Например, <img src="Images/3_example1.png" alt="example1" title="Нулевые матрицы" align="middle"> - нулевые матрицы. </p>
+
+		<p id="newParagraph">
+			Пусть матрица <em>A<sub>m×n</sub></em> имеет такой вид:
+		</p>
+
+		<div style="text-align: center;">
+			<img src="Images/3_example2.png" alt="example2" title="Матрица A размера mxn">
+		</div>
+
+
+		<p id="newParagraph">
+			Тогда данную матрицу называют <em>трапециевидной.</em> на может и не содержать нулевых строк, но уж если они есть, то располагаются в низу матрицы. В более общем виде трапециевидную матрицу можно записать так:
+		</p>
+
+		<div style="text-align: center;">
+			<img src="Images/3_example3.png" alt="example3" title="Трапецевидная матрица">
+		</div>
+
+		<p id="newParagraph"> </p>
+		<div id="Navigation">
+			<div class="Labels">
+				<div class="opredelenye">Условия трапециевидных матриц.</div>
+				<ol>
+					<li>Все элементы, расположенные ниже главной диагонали, равны нулю.</li>
+					<li>Все элементы от <em>a<sub>11</sub></em> до <em>a<sub>rr</sub></em> , лежащие на главной диагонали, не равны нулю: <em>a<sub>11</sub>≠0</em>, <em>a<sub>22</sub>≠0</em>, ... ,<em>a<sub>rr</sub>≠0</em>
+					</li>
+					<li>Либо все элементы последних <em>m−r</em> строк равны нулю, либо <em>m=r</em> (т.е. нулевых строк нет вообще)</li>
+				</ol>
+				<div class="opredelenye" style="color: green;">Примеры трапециевидных матриц.</div>
+				<div style="text-align: center;">
+					<img src="Images/3_example4.png" alt="example4" title="Примеры трапециевидных матриц">
+				</div>
+			</div>
+		</div>
+
+		<p id="newParagraph"> </p>
+		<div id="Navigation">
+			<div class="Labels">
+				<div class="opredelenye">Условия ступенчатых матриц.</div>
+				<p id="newParagraph"> Матрицу <em>A<sub>m×n</sub></em> называют <em>ступенчатой,</em> если она удовлетворяет следующим условиям: </p>
+				<ol>
+					<li>Первый элемент первой строки не равен нулю, <em>a<sub>11</sub>≠0.</em> </li>
+					<li>Каждая ненулевая строка (т.е. строка, которая содержит хоть один элемент, не равный нулю) состоит из двух частей: первая часть (нулевая) и вторая часть, которая начинается с ненулевого элемента:
+					</li>
+					<div style="text-align: center;">
+						<img src="Images/3_example5.png" alt="example5" title="Пример">
+					</div>
+					<li>Из двух ненулевых строк та находится ниже, у которой нулевая часть больше.</li>
+					<li>Нулевые строки могут располагаться только после ненулевых строк.</li>
+				</ol>
+				<div class="opredelenye" style="color: green;">Пример ступенчатых матриц.</div>
+				<div style="text-align: center;">
+					<img src="Images/3_example6.png" alt="example6" title="Пример">
+				</div>
+			</div>
+		</div>
+
+		<p id="newParagraph"> </p>
+		<div id="Navigation">
+			<div class="Labels">
+				<div class="opredelenye">Условие верхней треугольной матрицы.</div>
+				<p id="newParagraph"> Если все элементы квадратной матрицы, расположенные под главной диагональю, равны нулю, то такую матрицу называют <em>верхней треугольной матрицей.</em> </p>
+				<div class="opredelenye" style="color: green;">Пример верхней треугольной матрицы.</div>
+				<div style="text-align: center;">
+					<img src="Images/3_example7.png" alt="example7" title="Пример">
+				</div>
+			</div>
+		</div>
+
+		<p id="newParagraph"> </p>
+		<div id="Navigation">
+			<div class="Labels">
+				<div class="opredelenye">Условие нижней треугольной матрицы.</div>
+				<p id="newParagraph"> Если все элементы квадратной матрицы, расположенные над главной диагональю, равны нулю, то такую матрицу называют <em>нижней треугольной матрицей.</em> </p>
+				<div class="opredelenye" style="color: green;">Пример нижней треугольной матрицы.</div>
+				<div style="text-align: center;">
+					<img src="Images/3_example8.png" alt="example8" title="Нижняя треугольная матрица">
+				</div>
+			</div>
+		</div>
+
+		<p id="newParagraph"> </p>
+		<div id="Navigation">
+			<div class="Labels">
+				<div class="opredelenye">Условие диагональной матрицы.</div>
+				<p id="newParagraph"> Если все элементы этой матрицы, не лежащие на главной диагонали, равны нулю, то такую матрицу называют <em>диагональной матрицей.</em> </p>
+				<div class="opredelenye" style="color: green;">Пример диагональной матрицы.</div>
+				<div style="text-align: center;">
+					<img src="Images/3_example9.png" alt="example9" title="Пример">
+				</div>
+			</div>
+		</div>
+
+		<p id="newParagraph"> </p>
+		<div id="Navigation">
+			<div class="Labels">
+				<div class="opredelenye">Единичная диагональная матрица.</div>
+				<p id="newParagraph"> Диагональная матрица называется <em>единичной</em>, если все элементы этой матрицы, расположенные на главной диагонали, равны 1. </p>
+				<div class="opredelenye" style="color: green;">Пример единичной диагональной матрицы.</div>
+				<div style="text-align: center;">
+					<img src="Images/3_example10.png" alt="example10" title="Единичная матрица четвёртого порядка">
+				</div>
+			</div>
+		</div>
+
+
+
+
+	</div>
+
+	<div id="copyrigth">
+		<p style="float: right; margin-top: 70px; color: grey;">@Copyrigth Куликов А.Ю. гр.4-80 к</p>
+	</div>
+
+
+
+</body>
+
+</html>

@@ -37,5 +37,9 @@ namespace WindowsFormsApp1
             new Lab4().ShowDialog();
         }
 
+        private void LabBTN5_Click(object sender, EventArgs e)
+        {
+            new Lab5().ShowDialog();
+        }
     }
 }
